@@ -1,0 +1,2102 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Sigein Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Sigein</Alias>
+        <ConnectionStringEncrypted>9FRlC8VN0s1iev2sZ2zk49FY2c9OcarF4nslzPTs617TePfPTwV7bctahFhhAKRGgHD7CWFRq4V6Sb30ZEmxo9lam4jJTEuY8BulXOvYIC/5alPCZxhZhWJHXdhkXK0b2V77wk1PQ938fqH46j2k/8XIlStNXQH97FsZBGqYaF71Gt0o1w==</ConnectionStringEncrypted>
+        <Name>Sigein</Name>
+      </Sigein>
+    </Databases>
+    <DataSources isList="true" count="8">
+      <IDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IDP.SPE_REP_RESULT_PUESTO_EXPERIENCIA</Alias>
+        <Columns isList="true" count="5">
+          <value>ID_PUESTO_EXPERIENCIA,System.Int32</value>
+          <value>ID_AREA_INTERES,System.Int32</value>
+          <value>NO_TIEMPO,System.Decimal</value>
+          <value>CL_NIVEL_REQUERIDO,System.String</value>
+          <value>NB_AREA_INTERES,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IDP.SPE_REP_RESULT_PUESTO_EXPERIENCIA</Name>
+        <NameInSource>Sigein</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_PIN_ID_PUESTO,ID_PUESTO,8,0</value>
+        </Parameters>
+        <SqlCommand>IDP.SPE_REP_RESULT_PUESTO_EXPERIENCIA</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </IDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA>
+      <IDP_SPE_REP_RESULT_PUESTO_RELACIONES Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IDP.SPE_REP_RESULT_PUESTO_RELACIONES</Alias>
+        <Columns isList="true" count="4">
+          <value>ID_PUESTO_RELACIONADO,System.Int32</value>
+          <value>CL_TIPO_RELACION,System.String</value>
+          <value>NB_PUESTO,System.String</value>
+          <value>CL_PUESTO,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IDP.SPE_REP_RESULT_PUESTO_RELACIONES</Name>
+        <NameInSource>Sigein</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_PIN_ID_PUESTO,ID_PUESTO,8,0</value>
+        </Parameters>
+        <SqlCommand>IDP.SPE_REP_RESULT_PUESTO_RELACIONES</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </IDP_SPE_REP_RESULT_PUESTO_RELACIONES>
+      <IDP_SPE_REP_RESULT_PUESTO_SUPERIOR Ref="5" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IDP.SPE_REP_RESULT_PUESTO_SUPERIOR</Alias>
+        <Columns isList="true" count="4">
+          <value>ID_PUESTO_RELACIONADO,System.Int32</value>
+          <value>CL_TIPO_RELACION,System.String</value>
+          <value>NB_PUESTO,System.String</value>
+          <value>CL_PUESTO,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IDP.SPE_REP_RESULT_PUESTO_SUPERIOR</Name>
+        <NameInSource>Sigein</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_PIN_ID_PUESTO,ID_PUESTO,8,0</value>
+        </Parameters>
+        <SqlCommand>IDP.SPE_REP_RESULT_PUESTO_SUPERIOR</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </IDP_SPE_REP_RESULT_PUESTO_SUPERIOR>
+      <IDP_SPE_REP_RESULT_PUESTO_SUBORDINADO Ref="6" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IDP.SPE_REP_RESULT_PUESTO_SUBORDINADO</Alias>
+        <Columns isList="true" count="4">
+          <value>ID_PUESTO_RELACIONADO,System.Int32</value>
+          <value>CL_TIPO_RELACION,System.String</value>
+          <value>NB_PUESTO,System.String</value>
+          <value>CL_PUESTO,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IDP.SPE_REP_RESULT_PUESTO_SUBORDINADO</Name>
+        <NameInSource>Sigein</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_PIN_ID_PUESTO,ID_PUESTO,8,0</value>
+        </Parameters>
+        <SqlCommand>IDP.SPE_REP_RESULT_PUESTO_SUBORDINADO</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </IDP_SPE_REP_RESULT_PUESTO_SUBORDINADO>
+      <IDP_SPE_REP_RESULT_PUESTO Ref="7" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IDP.SPE_REP_RESULT_PUESTO</Alias>
+        <Columns isList="true" count="41">
+          <value>ID_PUESTO,System.Int32</value>
+          <value>FG_ACTIVO,System.Boolean</value>
+          <value>FE_INACTIVO,System.DateTime</value>
+          <value>CL_PUESTO,System.String</value>
+          <value>NB_PUESTO,System.String</value>
+          <value>NO_EDAD_MINIMA,System.Byte</value>
+          <value>NO_EDAD_MAXIMA,System.Byte</value>
+          <value>XML_REQUERIMIENTOS,System.String</value>
+          <value>XML_OBSERVACIONES,System.String</value>
+          <value>XML_RESPONSABILIDAD,System.String</value>
+          <value>XML_AUTORIDAD,System.String</value>
+          <value>CL_TIPO_PUESTO,System.String</value>
+          <value>ID_BITACORA,System.Int32</value>
+          <value>CL_POSICION_ORGANIGRAMA,System.String</value>
+          <value>CL_DOCUMENTO,System.String</value>
+          <value>CL_VERSION,System.String</value>
+          <value>FE_ELABORACION,System.DateTime</value>
+          <value>NB_ELABORO,System.String</value>
+          <value>FE_REVISION,System.DateTime</value>
+          <value>NB_REVISO,System.String</value>
+          <value>FE_AUTORIZACION,System.DateTime</value>
+          <value>NB_AUTORIZO,System.String</value>
+          <value>DS_CONTROL_CAMBIOS,System.String</value>
+          <value>CL_TIPO_PRESTACIONES,System.String</value>
+          <value>XML_PRESTACIONES,System.String</value>
+          <value>NB_CENTRO_OPTVO,System.String</value>
+          <value>NB_CENTRO_ADMVO,System.String</value>
+          <value>CL_DEPARTAMENTO,System.String</value>
+          <value>NB_DEPARTAMENTO,System.String</value>
+          <value>NB_ESTADO_CIVIL,System.String</value>
+          <value>CL_GENERO,System.String</value>
+          <value>NB_GENERO,System.String</value>
+          <value>ID_PUESTO_JEFE,System.Int32</value>
+          <value>CL_PUESTO_JEJE,System.String</value>
+          <value>NB_PUESTO_JEFE,System.String</value>
+          <value>XML_SUBORDINADOS,System.String</value>
+          <value>XML_INTERRELACIONADOS,System.String</value>
+          <value>XML_LATERAL,System.String</value>
+          <value>XML_ALTERNATIVA,System.String</value>
+          <value>XML_ESCOLARIDADES,System.String</value>
+          <value>XML_COMPETENCIAS_REQUERIDAS,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IDP.SPE_REP_RESULT_PUESTO</Name>
+        <NameInSource>Sigein</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_PIN_ID_PUESTO,ID_PUESTO,8,0</value>
+        </Parameters>
+        <SqlCommand>IDP.SPE_REP_RESULT_PUESTO</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </IDP_SPE_REP_RESULT_PUESTO>
+      <IDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES Ref="8" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IDP.SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES</Alias>
+        <Columns isList="true" count="2">
+          <value>NB_CAMPO,System.String</value>
+          <value>NO_VALOR,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IDP.SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES</Name>
+        <NameInSource>Sigein</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_PIN_ID_PUESTO,ID_PUESTO,8,0</value>
+        </Parameters>
+        <SqlCommand>IDP.SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </IDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES>
+      <IDP_SPE_REP_RESULT_PUESTO_FUNCIONES Ref="9" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IDP.SPE_REP_RESULT_PUESTO_FUNCIONES</Alias>
+        <Columns isList="true" count="8">
+          <value>ID_PUESTO_FUNCION,System.Int32</value>
+          <value>NB_PUESTO_FUNCION,System.String</value>
+          <value>XML_DETALLE,System.String</value>
+          <value>XML_NOTAS,System.String</value>
+          <value>NB_COMPETENCIA,System.String</value>
+          <value>NO_VALOR_NIVEL,System.Decimal</value>
+          <value>NB_INDICADOR,System.String</value>
+          <value>DS_INDICADOR,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IDP.SPE_REP_RESULT_PUESTO_FUNCIONES</Name>
+        <NameInSource>Sigein</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_PIN_ID_PUESTO,ID_PUESTO,8,0</value>
+        </Parameters>
+        <SqlCommand>IDP.SPE_REP_RESULT_PUESTO_FUNCIONES</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </IDP_SPE_REP_RESULT_PUESTO_FUNCIONES>
+      <IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS Ref="10" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IDP.SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS</Alias>
+        <Columns isList="true" count="21">
+          <value>ID_COMPETENCIA,System.Int32</value>
+          <value>CL_COMPETENCIA,System.String</value>
+          <value>NB_COMPETENCIA,System.String</value>
+          <value>DS_COMPETENCIA,System.String</value>
+          <value>ID_PUESTO_FUNCION,System.Int32</value>
+          <value>ID_PUESTO_COMPETENCIA,System.Int32</value>
+          <value>CL_TIPO_COMPETENCIA,System.String</value>
+          <value>CL_PUESTO_TIPO_COMPETENCIA,System.String</value>
+          <value>NB_TIPO_COMPETENCIA,System.String</value>
+          <value>CL_CLASIFICACION,System.String</value>
+          <value>ID_NIVEL_DESEADO,System.Int32</value>
+          <value>NO_VALOR_NIVEL,System.Int32</value>
+          <value>DS_CLASIFICACION_COMPETENCIA,System.String</value>
+          <value>NB_CLASIFICACION_COMPETENCIA,System.String</value>
+          <value>FG_NIVEL_0,System.Boolean</value>
+          <value>FG_NIVEL_1,System.Boolean</value>
+          <value>FG_NIVEL_2,System.Boolean</value>
+          <value>FG_NIVEL_3,System.Boolean</value>
+          <value>FG_NIVEL_4,System.Boolean</value>
+          <value>FG_NIVEL_5,System.Boolean</value>
+          <value>CL_COLOR,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IDP.SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS</Name>
+        <NameInSource>Sigein</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_PIN_ID_PUESTO,ID_PUESTO,8,0</value>
+        </Parameters>
+        <SqlCommand>IDP.SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="1">
+      <value>,ID_PUESTO,ID_PUESTO,,System.Int32,,False,False,False,False,,,True</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page6 Ref="11" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="23">
+        <ReportTitleBand1 Ref="12" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,2.2</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text42 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.4,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="11" />
+              <Parent isRef="12" />
+              <Text>Clave del puesto</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text42>
+            <Text41 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,1.4,15.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="11" />
+              <Parent isRef="12" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.CL_PUESTO}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text41>
+            <Text7 Ref="15" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,20</Font>
+              <Guid>2022741167af4a1180d800b5f5bcd55f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="11" />
+              <Parent isRef="12" />
+              <Text>Descripción del puesto</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text7>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+        </ReportTitleBand1>
+        <DataBand1 Ref="16" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.4,19,14.2</ClientRectangle>
+          <Components isList="true" count="24">
+            <Text43 Ref="17" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>e9bdd23b24b64fc3ac10aee1bc066a06</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>I. Datos generales del puesto</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text43>
+            <Text44 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.4,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>f8046c4f6f8a4280801305ed24f9996f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Información ISO:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text44>
+            <Text45 Ref="19" type="Text" isKey="true">
+              <Border>Top, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,1.4,11.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.CL_VERSION}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text45>
+            <Text46 Ref="20" type="Text" isKey="true">
+              <Border>Top, Left;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,1.4,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Clave:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text46>
+            <Text47 Ref="21" type="Text" isKey="true">
+              <Border>Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,2,11.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.CL_VERSION}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text47>
+            <Text48 Ref="22" type="Text" isKey="true">
+              <Border>Left;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,2,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Versión:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text48>
+            <Text49 Ref="23" type="Text" isKey="true">
+              <Border>Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,2.6,11.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.FE_ELABORACION}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="24" type="DateFormat" isKey="true" />
+            </Text49>
+            <Text50 Ref="25" type="Text" isKey="true">
+              <Border>Left;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,2.6,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Fecha:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text50>
+            <Text51 Ref="26" type="Text" isKey="true">
+              <Border>Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,3.2,11.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.FE_REVISION}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="27" type="DateFormat" isKey="true" />
+            </Text51>
+            <Text52 Ref="28" type="Text" isKey="true">
+              <Border>Left;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,3.2,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Ultima revisón:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text52>
+            <Text53 Ref="29" type="Text" isKey="true">
+              <Border>Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,3.8,11.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.NB_ELABORO}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text53>
+            <Text54 Ref="30" type="Text" isKey="true">
+              <Border>Left;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,3.8,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Elaboró:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text54>
+            <Text55 Ref="31" type="Text" isKey="true">
+              <Border>Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,4.4,11.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text55</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.NB_AUTORIZO}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text55>
+            <Text56 Ref="32" type="Text" isKey="true">
+              <Border>Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,4.4,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text56</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Autorizó:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text56>
+            <Text57 Ref="33" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,5.4,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text57</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.NB_PUESTO}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text57>
+            <Text58 Ref="34" type="Text" isKey="true">
+              <Border>None;[149:55:52];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,5.4,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text58</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Nombre del puesto:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text58>
+            <Text59 Ref="35" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,6.4,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text59</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>[{IDP_SPE_REP_RESULT_PUESTO.CL_DEPARTAMENTO}] {IDP_SPE_REP_RESULT_PUESTO.NB_DEPARTAMENTO}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text59>
+            <Text60 Ref="36" type="Text" isKey="true">
+              <Border>None;[149:55:52];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,6.4,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text60</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Departamento:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text60>
+            <Text61 Ref="37" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,7.4,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text61</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>[{IDP_SPE_REP_RESULT_PUESTO.CL_PUESTO_JEJE}] {IDP_SPE_REP_RESULT_PUESTO.NB_PUESTO_JEFE}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text61>
+            <Text62 Ref="38" type="Text" isKey="true">
+              <Border>None;[149:55:52];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,7.4,3.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text62</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Puesto del jefe inmediato:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text62>
+            <Text63 Ref="39" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,8.8,15.4,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text63</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_SUBORDINADOS}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text63>
+            <Text64 Ref="40" type="Text" isKey="true">
+              <Border>None;[149:55:52];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,8.8,3.6,1.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text64</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Puestos que supervisa en forma inmediata:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text64>
+            <Text65 Ref="41" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,11.6,15.4,2.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text65</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_INTERRELACIONADOS}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text65>
+            <Text66 Ref="42" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,11.6,3.6,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text66</Name>
+              <Page isRef="11" />
+              <Parent isRef="16" />
+              <Text>Puestos interrelacionados:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text66>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <DataBand2 Ref="43" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,18.4,19,7.8</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text68 Ref="44" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,1,15.4,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text68</Name>
+              <Page isRef="11" />
+              <Parent isRef="43" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_ALTERNATIVA}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text68>
+            <Text69 Ref="45" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text69</Name>
+              <Page isRef="11" />
+              <Parent isRef="43" />
+              <Text>Ruta vertical:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text69>
+            <Text70 Ref="46" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,4.4,15.4,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text70</Name>
+              <Page isRef="11" />
+              <Parent isRef="43" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_LATERAL}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text70>
+            <Text71 Ref="47" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text71</Name>
+              <Page isRef="11" />
+              <Parent isRef="43" />
+              <Text>Ruta alternativa:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text71>
+            <Text67 Ref="48" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>cd410c6c69c44a37bfab77a23749fe52</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text67</Name>
+              <Page isRef="11" />
+              <Parent isRef="43" />
+              <Text>II. Ruta de crecimiento</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text67>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <DataBand3 Ref="49" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,27,19,1</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text72 Ref="50" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>07b5305119444e4e8226418157cd1e63</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text72</Name>
+              <Page isRef="11" />
+              <Parent isRef="49" />
+              <Text>III. Posición en el organigrama (relaciones directas)</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text72>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand3</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand3>
+        <HeaderBand1 Ref="51" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,28.8,19,0.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text74 Ref="52" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,0,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>5751bb22012d46458b5f612d7123820f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text74</Name>
+              <Page isRef="11" />
+              <Parent isRef="51" />
+              <Text>Puestos superiores</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text74>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+        </HeaderBand1>
+        <DataIDP_SPE_REP_RESULT_PUESTO_SUPERIOR Ref="53" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,30.2,19,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <DataIDP_SPE_REP_RESULT_PUESTO_SUPERIOR_NB_PUESTO Ref="54" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,0,15.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_SUPERIOR_NB_PUESTO</Name>
+              <Page isRef="11" />
+              <Parent isRef="53" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_SUPERIOR.NB_PUESTO}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_SUPERIOR_NB_PUESTO>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>IDP.SPE_REP_RESULT_PUESTO_SUPERIOR</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataIDP.SPE_REP_RESULT_PUESTO_SUPERIOR</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataIDP_SPE_REP_RESULT_PUESTO_SUPERIOR>
+        <DataBand4 Ref="55" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,31.8,19,3.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text40 Ref="56" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,1.6,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="11" />
+              <Parent isRef="55" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.NB_PUESTO}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text40>
+            <Shape2 Ref="57" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Black</Brush>
+              <ClientRectangle>10.8,0.4,0.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>2bf2524d576042c89e15b386ad5b9cab</Guid>
+              <Name>Shape2</Name>
+              <Page isRef="11" />
+              <Parent isRef="55" />
+              <ShapeType Ref="58" type="Stimulsoft.Report.Components.ShapeTypes.StiArrowShapeType" isKey="true">
+                <Direction>Up</Direction>
+              </ShapeType>
+            </Shape2>
+            <Shape1 Ref="59" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Black</Brush>
+              <ClientRectangle>10.8,2.6,0.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>Shape1</Name>
+              <Page isRef="11" />
+              <Parent isRef="55" />
+              <ShapeType Ref="60" type="Stimulsoft.Report.Components.ShapeTypes.StiArrowShapeType" isKey="true">
+                <Direction>Down</Direction>
+              </ShapeType>
+            </Shape1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand4</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand4>
+        <HeaderBand2 Ref="61" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,36.4,19,0.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text73 Ref="62" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,0,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>82fd5044106643558ad315a8d8c235ab</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text73</Name>
+              <Page isRef="11" />
+              <Parent isRef="61" />
+              <Text>Puestos subordinados</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text73>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand2</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+        </HeaderBand2>
+        <DataIDP_SPE_REP_RESULT_PUESTO_SUBORDINADO Ref="63" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,37.8,19,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <DataIDP_SPE_REP_RESULT_PUESTO_SUBORDINADO_NB_PUESTO Ref="64" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,0,15.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_SUBORDINADO_NB_PUESTO</Name>
+              <Page isRef="11" />
+              <Parent isRef="63" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_SUBORDINADO.NB_PUESTO}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_SUBORDINADO_NB_PUESTO>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>IDP.SPE_REP_RESULT_PUESTO_SUBORDINADO</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataIDP.SPE_REP_RESULT_PUESTO_SUBORDINADO</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataIDP_SPE_REP_RESULT_PUESTO_SUBORDINADO>
+        <DataBand5 Ref="65" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,39.4,19,7.6</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text75 Ref="66" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>0f205505033649a6bc3abbb7c8b73e72</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text75</Name>
+              <Page isRef="11" />
+              <Parent isRef="65" />
+              <Text>IV. Responsabilidad del puesto</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text75>
+            <Text77 Ref="67" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.6,3.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text77</Name>
+              <Page isRef="11" />
+              <Parent isRef="65" />
+              <Text>Es responsable de:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text77>
+            <Text76 Ref="68" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,1.6,15.4,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text76</Name>
+              <Page isRef="11" />
+              <Parent isRef="65" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_RESPONSABILIDAD}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text76>
+            <Text78 Ref="69" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,4.2,15.4,2.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text78</Name>
+              <Page isRef="11" />
+              <Parent isRef="65" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_AUTORIDAD}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text78>
+            <Text79 Ref="70" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.2,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text79</Name>
+              <Page isRef="11" />
+              <Parent isRef="65" />
+              <Text>Autoridad:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text79>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand5</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand5>
+        <DataBand6 Ref="71" type="DataBand" isKey="true">
+          <Border>None;Red;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,47.8,19,11.6</ClientRectangle>
+          <Components isList="true" count="11">
+            <Text80 Ref="72" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>b9fee76ff76b422bafefdf996d4ff821</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text80</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>V. Perfil de ingreso</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text80>
+            <Text81 Ref="73" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,1.4,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text81</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>De {IDP_SPE_REP_RESULT_PUESTO.NO_EDAD_MINIMA} a {IDP_SPE_REP_RESULT_PUESTO.NO_EDAD_MAXIMA} años de edad</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text81>
+            <Text82 Ref="74" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text82</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>Rango de edad:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text82>
+            <Text83 Ref="75" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,2.4,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text83</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.NB_GENERO}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text83>
+            <Text84 Ref="76" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text84</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>Sexo:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text84>
+            <Text85 Ref="77" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,3.4,15.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text85</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.NB_ESTADO_CIVIL}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text85>
+            <Text86 Ref="78" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text86</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>Estado civil:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text86>
+            <Text87 Ref="79" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,4.4,15.4,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text87</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_ESCOLARIDADES}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text87>
+            <Text88 Ref="80" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text88</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>Escolaridad:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text88>
+            <Text89 Ref="81" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,7.8,15.4,3.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text89</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_COMPETENCIAS_REQUERIDAS}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text89>
+            <Text90 Ref="82" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,7.8,3.4,2.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text90</Name>
+              <Page isRef="11" />
+              <Parent isRef="71" />
+              <Text>Competencias técnicas necesarias:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text90>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand6</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand6>
+        <HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA Ref="83" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,60.2,19,0.5</ClientRectangle>
+          <Components isList="true" count="4">
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_CL_NIVEL_REQUERIDO Ref="84" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,0,5,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_CL_NIVEL_REQUERIDO</Name>
+              <Page isRef="11" />
+              <Parent isRef="83" />
+              <Text>Nivel requerido</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_CL_NIVEL_REQUERIDO>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NB_AREA_INTERES Ref="85" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,0,8.4,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NB_AREA_INTERES</Name>
+              <Page isRef="11" />
+              <Parent isRef="83" />
+              <Text>Experiencia en</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NB_AREA_INTERES>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NO_TIEMPO Ref="86" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,0,2,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NO_TIEMPO</Name>
+              <Page isRef="11" />
+              <Parent isRef="83" />
+              <Text>Tiempo</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NO_TIEMPO>
+            <Text91 Ref="87" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,3.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>5ef796f05fc145138535893ec7fa57e4</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text91</Name>
+              <Page isRef="11" />
+              <Parent isRef="83" />
+              <Text>Experiencia necesaria:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text91>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+        </HeaderIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA>
+        <DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA Ref="88" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,61.5,19,0.5</ClientRectangle>
+          <Components isList="true" count="3">
+            <DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_CL_NIVEL_REQUERIDO Ref="89" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14,0,5,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_CL_NIVEL_REQUERIDO</Name>
+              <Page isRef="11" />
+              <Parent isRef="88" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA.CL_NIVEL_REQUERIDO}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_CL_NIVEL_REQUERIDO>
+            <DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NB_AREA_INTERES Ref="90" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.6,0,8.4,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NB_AREA_INTERES</Name>
+              <Page isRef="11" />
+              <Parent isRef="88" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA.NB_AREA_INTERES}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NB_AREA_INTERES>
+            <DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NO_TIEMPO Ref="91" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,0,2,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NO_TIEMPO</Name>
+              <Page isRef="11" />
+              <Parent isRef="88" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA.NO_TIEMPO}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="92" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA_NO_TIEMPO>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>IDP.SPE_REP_RESULT_PUESTO_EXPERIENCIA</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataIDP.SPE_REP_RESULT_PUESTO_EXPERIENCIA</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataIDP_SPE_REP_RESULT_PUESTO_EXPERIENCIA>
+        <DataBand7 Ref="93" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,62.8,19,5.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text93 Ref="94" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,3.4,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text93</Name>
+              <Page isRef="11" />
+              <Parent isRef="93" />
+              <Text>Requerimientos del puesto:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text93>
+            <Text92 Ref="95" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,0.6,15.4,2.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text92</Name>
+              <Page isRef="11" />
+              <Parent isRef="93" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_REQUERIMIENTOS}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text92>
+            <Text94 Ref="96" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,3.4,15.4,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text94</Name>
+              <Page isRef="11" />
+              <Parent isRef="93" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_OBSERVACIONES}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text94>
+            <Text95 Ref="97" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text95</Name>
+              <Page isRef="11" />
+              <Parent isRef="93" />
+              <Text>Observaciones:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text95>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand7</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand7>
+        <DataBand8 Ref="98" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,69.2,19,3.6</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="99" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>eb3cb74b5e4e442fa5976b599ba4e7dc</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="11" />
+              <Parent isRef="98" />
+              <Text>VI. Prestaciones especiales del puesto</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text1>
+            <Text2 Ref="100" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,1.4,15.4,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="11" />
+              <Parent isRef="98" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO.XML_PRESTACIONES}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+            <Text3 Ref="101" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="11" />
+              <Parent isRef="98" />
+              <Text>Prestaciones:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand8</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand8>
+        <DataBand9 Ref="102" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,73.6,19,1.2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text4 Ref="103" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>4f54f1f0f55048bc9e7ee68a13bf3d6d</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="11" />
+              <Parent isRef="102" />
+              <Text>VII. Funciones genericas del puesto</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand9</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand9>
+        <HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES Ref="104" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,75.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="5">
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_PUESTO_FUNCION Ref="105" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_PUESTO_FUNCION</Name>
+              <Page isRef="11" />
+              <Parent isRef="104" />
+              <Text>Actividad</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_PUESTO_FUNCION>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_XML_DETALLE Ref="106" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.8,0,5.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_XML_DETALLE</Name>
+              <Page isRef="11" />
+              <Parent isRef="104" />
+              <Text>Detalle</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_XML_DETALLE>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_COMPETENCIA Ref="107" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,0,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_COMPETENCIA</Name>
+              <Page isRef="11" />
+              <Parent isRef="104" />
+              <Text>Competencias específicas</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_COMPETENCIA>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NO_VALOR_NIVEL Ref="108" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.8,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NO_VALOR_NIVEL</Name>
+              <Page isRef="11" />
+              <Parent isRef="104" />
+              <Text>Nivel</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NO_VALOR_NIVEL>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_INDICADOR Ref="109" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.2,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_INDICADOR</Name>
+              <Page isRef="11" />
+              <Parent isRef="104" />
+              <Text>Indicadores de desempeño de evidencias</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_INDICADOR>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+        </HeaderIDP_SPE_REP_RESULT_PUESTO_FUNCIONES>
+        <DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES Ref="110" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,77.2,19,0.8</ClientRectangle>
+          <Components isList="true" count="5">
+            <DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_PUESTO_FUNCION Ref="111" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>2,2,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_PUESTO_FUNCION</Name>
+              <Page isRef="11" />
+              <Parent isRef="110" />
+              <ProcessingDuplicates>Merge</ProcessingDuplicates>
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_FUNCIONES.NB_PUESTO_FUNCION}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_PUESTO_FUNCION>
+            <DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_XML_DETALLE Ref="112" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.8,0,5.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,2,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_XML_DETALLE</Name>
+              <Page isRef="11" />
+              <Parent isRef="110" />
+              <ProcessingDuplicates>Merge</ProcessingDuplicates>
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_FUNCIONES.XML_DETALLE}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_XML_DETALLE>
+            <DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_COMPETENCIA Ref="113" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9,0,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>2,2,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_COMPETENCIA</Name>
+              <Page isRef="11" />
+              <Parent isRef="110" />
+              <ProcessingDuplicates>Merge</ProcessingDuplicates>
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_FUNCIONES.NB_COMPETENCIA}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_COMPETENCIA>
+            <DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NO_VALOR_NIVEL Ref="114" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>12.8,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NO_VALOR_NIVEL</Name>
+              <Page isRef="11" />
+              <Parent isRef="110" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_FUNCIONES.NO_VALOR_NIVEL}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NO_VALOR_NIVEL>
+            <DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_INDICADOR Ref="115" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14.2,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>2,2,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_INDICADOR</Name>
+              <Page isRef="11" />
+              <Parent isRef="110" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_FUNCIONES.NB_INDICADOR}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES_NB_INDICADOR>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>IDP.SPE_REP_RESULT_PUESTO_FUNCIONES</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataIDP.SPE_REP_RESULT_PUESTO_FUNCIONES</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataIDP_SPE_REP_RESULT_PUESTO_FUNCIONES>
+        <DataBand10 Ref="116" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,78.8,19,1.2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text5 Ref="117" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>0c314007912e4db0a0f9bacc8a834960</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="11" />
+              <Parent isRef="116" />
+              <Text>VIII. Competencias genéricas del puesto</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Guid>784de1b881264c45949e3735f7d88bf9</Guid>
+          <Name>DataBand10</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand10>
+        <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS Ref="118" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,80.8,19,2</ClientRectangle>
+          <Components isList="true" count="8">
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_CLASIFICACION_COMPETENCIA Ref="119" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,3.8,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_CLASIFICACION_COMPETENCIA</Name>
+              <Page isRef="11" />
+              <Parent isRef="118" />
+              <Text>Clasificación</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_CLASIFICACION_COMPETENCIA>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_COMPETENCIA Ref="120" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.8,0,5.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_COMPETENCIA</Name>
+              <Page isRef="11" />
+              <Parent isRef="118" />
+              <Text>Competencia</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_COMPETENCIA>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_0 Ref="121" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.4,0,1.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_0</Name>
+              <Page isRef="11" />
+              <Parent isRef="118" />
+              <Text>0%
+No la necesita</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_0>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_1 Ref="122" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11,0,1.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_1</Name>
+              <Page isRef="11" />
+              <Parent isRef="118" />
+              <Text>20%
+La necesita poco</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_1>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_2 Ref="123" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,0,1.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_2</Name>
+              <Page isRef="11" />
+              <Parent isRef="118" />
+              <Text>40%
+Lo necesita medio bajo</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_2>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_3 Ref="124" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.2,0,1.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_3</Name>
+              <Page isRef="11" />
+              <Parent isRef="118" />
+              <Text>60%
+Lo necesita medio alto</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_3>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_4 Ref="125" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.8,0,1.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_4</Name>
+              <Page isRef="11" />
+              <Parent isRef="118" />
+              <Text>80%
+Lo necesita de manera importante</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_4>
+            <HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_5 Ref="126" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17.4,0,1.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_5</Name>
+              <Page isRef="11" />
+              <Parent isRef="118" />
+              <Text>100%
+Lo necesita de manera imprescindible</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+        </HeaderIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS>
+        <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS Ref="127" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,83.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="8">
+            <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_CLASIFICACION_COMPETENCIA Ref="128" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_CLASIFICACION_COMPETENCIA</Name>
+              <Page isRef="11" />
+              <Parent isRef="127" />
+              <ProcessingDuplicates>Merge</ProcessingDuplicates>
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS.NB_CLASIFICACION_COMPETENCIA}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_CLASIFICACION_COMPETENCIA>
+            <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_COMPETENCIA Ref="129" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.8,0,5.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_COMPETENCIA</Name>
+              <Page isRef="11" />
+              <Parent isRef="127" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS.NB_COMPETENCIA}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_NB_COMPETENCIA>
+            <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_0 Ref="130" type="CheckBox" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <Checked>{IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS.FG_NIVEL_0}</Checked>
+              <CheckStyleForTrue>DotCircle</CheckStyleForTrue>
+              <ClientRectangle>9.4,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ContourColor>Black</ContourColor>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_0</Name>
+              <Page isRef="11" />
+              <Parent isRef="127" />
+              <TextBrush>Black</TextBrush>
+            </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_0>
+            <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_1 Ref="131" type="CheckBox" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <Checked>{IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS.FG_NIVEL_1}</Checked>
+              <CheckStyleForTrue>DotCircle</CheckStyleForTrue>
+              <ClientRectangle>11,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ContourColor>Black</ContourColor>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_1</Name>
+              <Page isRef="11" />
+              <Parent isRef="127" />
+              <TextBrush>Black</TextBrush>
+            </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_1>
+            <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_2 Ref="132" type="CheckBox" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <Checked>{IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS.FG_NIVEL_2}</Checked>
+              <CheckStyleForTrue>DotCircle</CheckStyleForTrue>
+              <ClientRectangle>12.6,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ContourColor>Black</ContourColor>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_2</Name>
+              <Page isRef="11" />
+              <Parent isRef="127" />
+              <TextBrush>Black</TextBrush>
+            </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_2>
+            <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_3 Ref="133" type="CheckBox" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <Checked>{IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS.FG_NIVEL_3}</Checked>
+              <CheckStyleForTrue>DotCircle</CheckStyleForTrue>
+              <ClientRectangle>14.2,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ContourColor>Black</ContourColor>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_3</Name>
+              <Page isRef="11" />
+              <Parent isRef="127" />
+              <TextBrush>Black</TextBrush>
+            </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_3>
+            <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_4 Ref="134" type="CheckBox" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <Checked>{IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS.FG_NIVEL_4}</Checked>
+              <CheckStyleForTrue>DotCircle</CheckStyleForTrue>
+              <ClientRectangle>15.8,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ContourColor>Black</ContourColor>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_4</Name>
+              <Page isRef="11" />
+              <Parent isRef="127" />
+              <TextBrush>Black</TextBrush>
+            </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_4>
+            <DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_5 Ref="135" type="CheckBox" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <Checked>{IDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS.FG_NIVEL_5}</Checked>
+              <CheckStyleForTrue>DotCircle</CheckStyleForTrue>
+              <ClientRectangle>17.4,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <ContourColor>Black</ContourColor>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_5</Name>
+              <Page isRef="11" />
+              <Parent isRef="127" />
+              <TextBrush>Black</TextBrush>
+            </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS_FG_NIVEL_5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>IDP.SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataIDP.SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataIDP_SPE_REP_RESULT_PUESTO_COMPETENCIAS_GENERICAS>
+        <DataBand11 Ref="136" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,85.2,19,1.2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text6 Ref="137" type="Text" isKey="true">
+              <Border>Bottom;[149:55:52];2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,15</Font>
+              <Guid>63ebc4a85d4547d18b1173e9864397ab</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="11" />
+              <Parent isRef="136" />
+              <Text>IX. Campos extras</Text>
+              <TextBrush>[192:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Guid>aa210e0145a748b196b935bdc4aa6e46</Guid>
+          <Name>DataBand11</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataBand11>
+        <DataIDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES Ref="138" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,87.2,19,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <DataIDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES_NB_CAMPO Ref="139" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES_NB_CAMPO</Name>
+              <Page isRef="11" />
+              <Parent isRef="138" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES.NB_CAMPO}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES_NB_CAMPO>
+            <DataIDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES_NO_VALOR Ref="140" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.2,0,13.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataIDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES_NO_VALOR</Name>
+              <Page isRef="11" />
+              <Parent isRef="138" />
+              <Text>{IDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES.NO_VALOR}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataIDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES_NO_VALOR>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>IDP.SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataIDP.SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES</Name>
+          <Page isRef="11" />
+          <Parent isRef="11" />
+          <Sort isList="true" count="0" />
+        </DataIDP_SPE_REP_RESULT_PUESTO_CAMPOS_ADICIONALES>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>119f74d364514d058b131f4d14839cda</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page6</Name>
+      <PageHeight>100</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="141" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page6>
+  </Pages>
+  <PrinterSettings Ref="142" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>9/8/2017 12:30:08 PM</ReportChanged>
+  <ReportCreated>8/5/2017 10:53:10 AM</ReportCreated>
+  <ReportFile>C:\Users\Desarrollo\Documents\Visual Studio 2015\Projects\SG5\branches\DEV\SistemaSIGEIN\SIGE.WebApp\Assets\reports\IDP\Descriptivo2.mrt</ReportFile>
+  <ReportGuid>1afd852886bf49ceabda9455976d4a94</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2015.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

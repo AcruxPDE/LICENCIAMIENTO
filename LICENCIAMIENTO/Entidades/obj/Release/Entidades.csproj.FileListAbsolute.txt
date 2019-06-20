@@ -1,0 +1,6 @@
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\Entidades\bin\Release\Entidades.dll
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\Entidades\bin\Release\Entidades.pdb
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\Entidades\bin\Release\Newtonsoft.Json.dll
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\Entidades\obj\Release\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\Entidades\obj\Release\Entidades.dll
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\Entidades\obj\Release\Entidades.pdb

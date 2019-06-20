@@ -1,0 +1,20 @@
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\AcruxLicenciamiento\Entidades\bin\Debug\Entidades.dll
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\AcruxLicenciamiento\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\AcruxLicenciamiento\Entidades\obj\Debug\Entidades.dll
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\AcruxLicenciamiento\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\AcruxLicenciamiento\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento - copia\Entidades\bin\Debug\Entidades.dll
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento - copia\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento - copia\Entidades\obj\Debug\Entidades.dll
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento - copia\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento\Entidades\bin\Debug\Entidades.dll
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento\Entidades\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento\Entidades\obj\Debug\Entidades.dll
+C:\Users\Levy Urbieta\Desktop\AcruxLicenciamiento\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\bin\Debug\Entidades.dll
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\obj\Debug\Entidades.dll
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache

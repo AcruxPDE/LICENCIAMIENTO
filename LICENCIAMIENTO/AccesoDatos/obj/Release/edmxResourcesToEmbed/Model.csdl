@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ACRUXLICENCIAMIENTOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ACRUXLICENCIAMIENTOEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="SPE_ELIMINA_C_CATALOGO_LISTA">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_LISTA" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_CATALOGO_VALOR">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_VALOR" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_ROL_FUNCION">
+      <Parameter Name="POUT_CLAVE_RETORNO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_ID_FUNCION" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_USUARIO">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_ROL">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_S_CATALOGO_TIPO">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_TIPO" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_S_FUNCION">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_FUNCION" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_CATALOGO_LISTA">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_LISTA" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_NB_CATALOGO_LISTA" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_CATALOGO_LISTA" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_TIPO" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_CATALOGO_VALOR">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_VALOR" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_CATALOGO_VALOR" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_CATALOGO_VALOR" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_CATALOGO_VALOR" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_LISTA" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_ROL">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_ROL" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_ROL" Mode="In" Type="String" />
+      <Parameter Name="PIN_XML_AUTORIZACION" Mode="In" Type="String" />
+      <Parameter Name="PIN_FG_ACTIVO" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_FE_INACTIVO" Mode="In" Type="DateTime" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_ROL_FUNCION">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_ID_FUNCION" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_USUARIO">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_CORREO_ELECTRONICO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="PIN_FG_CAMBIAR_PASSWORD" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_XML_PERSONALIZACION" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_ID_EMPLEADO" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_FG_ACTIVO" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_FE_INACTIVO" Mode="In" Type="DateTime" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_S_CATALOGO_TIPO">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_TIPO" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_NB_CATALOGO_TIPO" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_CATALOGO_TIPO" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_S_CONFIGURACION">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_XML_CONFIGURACION" Mode="In" Type="String" />
+      <Parameter Name="PIN_FI_LOGOTIPO" Mode="In" Type="Binary" />
+      <Parameter Name="PIN_CL_USUARIO_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_S_FUNCION">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_FUNCION" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_FUNCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_TIPO_FUNCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_FUNCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_FUNCION_PADRE" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_NB_URL" Mode="In" Type="String" />
+      <Parameter Name="PIN_XML_CONFIGURACION" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_S_ERROR">
+      <Parameter Name="PIN_CL_CLAVE" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_DS_ERROR" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_APP_CREA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA_CREA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_CATALOGO_LISTA" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_CATALOGO_LISTA_Result)">
+      <Parameter Name="PIN_ID_CATALOGO_LISTA" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_NB_CATALOGO_LISTA" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_CATALOGO_LISTA" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_TIPO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_CATALOGO_VALOR" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_CATALOGO_VALOR_Result)">
+      <Parameter Name="PIN_ID_CATALOGO_VALOR" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_CATALOGO_VALOR" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_CATALOGO_VALOR" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_CATALOGO_VALOR" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_CATALOGO_LISTA" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_ROL" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_ROL_Result)">
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_ROL" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_ROL" Mode="In" Type="String" />
+      <Parameter Name="PIN_XML_AUTORIZACION" Mode="In" Type="String" />
+      <Parameter Name="PIN_FG_ACTIVO" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_FE_INACTIVO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_ROL_FUNCION" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_ROL_FUNCION_Result)">
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_ID_FUNCION" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_USUARIO" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_USUARIO_Result)">
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_CORREO_ELECTRONICO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="PIN_FG_CAMBIAR_PASSWORD" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_XML_PERSONALIZACION" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_ID_EMPLEADO" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_FG_ACTIVO" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_FE_INACTIVO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_S_CATALOGO_TIPO" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_S_CATALOGO_TIPO_Result)">
+      <Parameter Name="PIN_ID_CATALOGO_TIPO" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_NB_CATALOGO_TIPO" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_CATALOGO_TIPO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_S_CONFIGURACION" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_S_CONFIGURACION_Result)">
+      <Parameter Name="PIN_XML_CONFIGURACION" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO_MODIFICA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_S_FUNCION" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_S_FUNCION_Result)">
+      <Parameter Name="PIN_ID_FUNCION" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_FUNCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_TIPO_FUNCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_FUNCION" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_FUNCION_PADRE" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_NB_URL" Mode="In" Type="String" />
+      <Parameter Name="PIN_XML_CONFIGURACION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_USUARIO_AUTENTICACION" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_USUARIO_AUTENTICACION_Result)">
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_AUTENTICACION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_ROLES" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_ROLES_Result)">
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_ROL" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_ROL_Result)">
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_ROLES">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_ROL" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_ROL" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_ROL" Mode="In" Type="String" />
+      <Parameter Name="PIN_FG_ACTIVO" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_XML_FUNCIONES" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_CLIENTE">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_CLIENTE" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_EMPRESA">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_EMPRESA" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_LICENCIA">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_LICENCIA" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_MODULO">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_MODULO" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_SISTEMA">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_SISTEMA" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_C_VERSION">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_VERSION" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_EMPRESA">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_EMPRESA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_EMPRESA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_EMPRESA" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_EMPRESA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_LICENCIA">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_LICENCIA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_LICENCIA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_LICENCIA" Mode="In" Type="String" />
+      <Parameter Name="PIN_FG_PERIODO" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_FG_VOLUMEN" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_DS_LICENCIA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_MODULO">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_MODULO" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_MODULO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_MODULO" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_MODULO" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_SISTEMA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_SISTEMA">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_SISTEMA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_SISTEMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_SISTEMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_TIPO" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_SISTEMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_VERSION">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_VERSION" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_MODULO" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_NO_RELEASE" Mode="In" Type="Decimal" />
+      <Parameter Name="PIN_DS_VERSION" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_EMPRESA" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_EMPRESA_Result)">
+      <Parameter Name="PIN_ID_EMPRESA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_EMPRESA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_EMPRESA" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_EMPRESA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_LICENCIA" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_LICENCIA_Result)">
+      <Parameter Name="PIN_ID_LICENCIA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_LICENCIA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_LICENCIA" Mode="In" Type="String" />
+      <Parameter Name="PIN_FG_PERIODO" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_FG_VOLUMEN" Mode="In" Type="Boolean" />
+      <Parameter Name="PIN_DS_LICENCIA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_MODULO" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_MODULO_Result)">
+      <Parameter Name="PIN_ID_MODULO" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_MODULO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_MODULO" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_MODULO" Mode="In" Type="String" />
+      <Parameter Name="PIN_ID_SISTEMA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_SISTEMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_SISTEMA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_SISTEMA" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_SISTEMA_Result)">
+      <Parameter Name="PIN_ID_SISTEMA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_SISTEMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_SISTEMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_TIPO" Mode="In" Type="String" />
+      <Parameter Name="PIN_DS_SISTEMA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_VERSION" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_VERSION_Result)">
+      <Parameter Name="PIN_ID_VERSION" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_MODULO" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_NO_RELEASE" Mode="In" Type="Decimal" />
+      <Parameter Name="PIN_DS_VERSION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_K_GESTION_PERIODO">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_GESTION_PERIODO" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_CLIENTE" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_SISTEMA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_EMPRESA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_MODULO" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_VERSION" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_LICENCIA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_FE_INICIO" Mode="In" Type="DateTime" />
+      <Parameter Name="PIN_FE_FIN" Mode="In" Type="DateTime" />
+      <Parameter Name="PIN_NO_VOLUMEN" Mode="In" Type="Int32" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_K_GESTION_PERIODOS" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_K_GESTION_PERIODOS_Result)">
+      <Parameter Name="PIN_ID_GESTION_PERIODO" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_CLIENTE" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_SISTEMA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_EMPRESA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_MODULO" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_VERSION" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_ID_LICENCIA" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_FE_INICIO" Mode="In" Type="DateTime" />
+      <Parameter Name="PIN_FE_FIN" Mode="In" Type="DateTime" />
+      <Parameter Name="PIN_NO_VOLUMEN" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_ELIMINA_K_GESTION_PERIODO">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_GESTION_PERIODO" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_INSERTA_ACTUALIZA_C_CLIENTE">
+      <Parameter Name="XML_RESULTADO" Mode="InOut" Type="String" />
+      <Parameter Name="PIN_ID_CLIENTE" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_CLIENTE" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_CLIENTE" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_CONTACTO" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PIN_XML_TELEFONOS" Mode="In" Type="String" />
+      <Parameter Name="PIN_XML_EMPRESAS" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_EJECUTIVO_CUENTA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_USUARIO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_PROGRAMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_TIPO_TRANSACCION" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_LICENCIAMIENTO" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_LICENCIAMIENTO_Result)">
+      <Parameter Name="PIN_CL_CLIENTE" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_SISTEMA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_EMPRESA" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_MODULO" Mode="In" Type="String" />
+      <Parameter Name="PIN_NO_VERSION" Mode="In" Type="Decimal" />
+      <Parameter Name="PIN_CL_LICENCIA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_C_CLIENTES" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_CLIENTES_Result)">
+      <Parameter Name="PIN_ID_CLIENTE" Mode="In" Type="Guid" />
+      <Parameter Name="PIN_CL_CLIENTE" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_PASSWORD" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_CLIENTE" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_CONTACTO" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_EMAIL" Mode="In" Type="String" />
+      <Parameter Name="PIN_NB_EJECUTIVO_CUENTA" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_CLIENTE_CATALOGOS" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_CLIENTE_CATALOGOS_Result)">
+      <Parameter Name="PIN_ID_CLIENTE" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_INFORMACION_CLIENTE" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_INFORMACION_CLIENTE_Result)">
+      <Parameter Name="PIN_CL_CLIENTE" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_PASSWORD" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPE_OBTIENE_LICENCIAS" ReturnType="Collection(ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_LICENCIAS_Result)">
+      <Parameter Name="PIN_CL_CLIENTE" Mode="In" Type="String" />
+      <Parameter Name="PIN_CL_PASSWORD" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SPE_OBTIENE_C_CATALOGO_LISTA_Result">
+    <Property Type="Int32" Name="ID_CATALOGO_LISTA" Nullable="false" />
+    <Property Type="String" Name="NB_CATALOGO_LISTA" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DS_CATALOGO_LISTA" Nullable="true" MaxLength="1000" />
+    <Property Type="Int32" Name="ID_CATALOGO_TIPO" Nullable="false" />
+    <Property Type="String" Name="NB_CATALOGO_TIPO" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="FG_SISTEMA" Nullable="true" />
+    <Property Type="DateTime" Name="FE_MODIFICACION" Nullable="true" />
+    <Property Type="String" Name="CL_USUARIO_MODIFICA" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_CATALOGO_VALOR_Result">
+    <Property Type="Int32" Name="ID_CATALOGO_VALOR" Nullable="false" />
+    <Property Type="String" Name="CL_CATALOGO_VALOR" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="NB_CATALOGO_VALOR" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DS_CATALOGO_VALOR" Nullable="true" MaxLength="1000" />
+    <Property Type="Int32" Name="ID_CATALOGO_LISTA" Nullable="false" />
+    <Property Type="String" Name="NB_CATALOGO_LISTA" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_ROL_Result">
+    <Property Type="Int32" Name="ID_ROL" Nullable="false" />
+    <Property Type="String" Name="CL_ROL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="NB_ROL" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="XML_AUTORIZACION" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="FG_ACTIVO" Nullable="false" />
+    <Property Type="DateTime" Name="FE_INACTIVO" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DS_FILTRO" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_ROL_FUNCION_Result">
+    <Property Type="Int32" Name="ID_ROL" Nullable="false" />
+    <Property Type="Int32" Name="ID_FUNCION" Nullable="false" />
+    <Property Type="String" Name="NB_ROL" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CL_ROL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="XML_AUTORIZACION" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="CL_FUNCION" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CL_TIPO_FUNCION" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NB_FUNCION" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NB_URL" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="XML_CONFIGURACION" Nullable="true" MaxLength="Max" />
+    <Property Type="Int32" Name="ID_FUNCION_PADRE" Nullable="true" />
+    <Property Type="String" Name="DS_FILTRO" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_USUARIO_Result">
+    <Property Type="String" Name="CL_USUARIO" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="NB_USUARIO" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="NB_CORREO_ELECTRONICO" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="NB_PASSWORD" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="FG_CAMBIAR_PASSWORD" Nullable="false" />
+    <Property Type="String" Name="XML_PERSONALIZACION" Nullable="true" MaxLength="Max" />
+    <Property Type="Int32" Name="ID_ROL" Nullable="false" />
+    <Property Type="Int32" Name="ID_EMPLEADO" Nullable="true" />
+    <Property Type="Boolean" Name="FG_ACTIVO" Nullable="false" />
+    <Property Type="DateTime" Name="FE_INACTIVO" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DS_FILTRO" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_S_CATALOGO_TIPO_Result">
+    <Property Type="Int32" Name="ID_CATALOGO_TIPO" Nullable="false" />
+    <Property Type="String" Name="NB_CATALOGO_TIPO" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DS_CATALOGO_TIPO" Nullable="true" MaxLength="1000" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_S_CONFIGURACION_Result">
+    <Property Type="String" Name="XML_CONFIGURACION" Nullable="true" MaxLength="Max" />
+    <Property Type="Binary" Name="FI_LOGOTIPO" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_S_FUNCION_Result">
+    <Property Type="Int32" Name="ID_FUNCION" Nullable="false" />
+    <Property Type="String" Name="CL_FUNCION" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CL_TIPO_FUNCION" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NB_FUNCION" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID_FUNCION_PADRE" Nullable="true" />
+    <Property Type="String" Name="NB_URL" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="XML_CONFIGURACION" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="DS_FILTRO" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_USUARIO_AUTENTICACION_Result">
+    <Property Type="String" Name="CL_AUTENTICACION" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="XML_AUTORIZACION" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="CL_USUARIO" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="NB_USUARIO" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="NB_PASSWORD" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NB_CORREO_ELECTRONICO" Nullable="false" MaxLength="300" />
+    <Property Type="Boolean" Name="FG_ACTIVO" Nullable="false" />
+    <Property Type="String" Name="NB_ROL" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="ID_EMPLEADO" Nullable="true" />
+    <Property Type="String" Name="XML_DATA" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_ROLES_Result">
+    <Property Type="Int32" Name="ID_ROL" Nullable="false" />
+    <Property Type="String" Name="CL_ROL" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="NB_ROL" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="FG_ACTIVO" Nullable="false" MaxLength="2" />
+    <Property Type="DateTime" Name="FE_MODIFICACION" Nullable="true" />
+    <Property Type="String" Name="CL_USUARIO_MODIFICA" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_ROL_Result">
+    <Property Type="Int32" Name="ID_ROL" Nullable="false" />
+    <Property Type="String" Name="CL_ROL" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="NB_ROL" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="FG_ACTIVO" Nullable="false" />
+    <Property Type="String" Name="XML_AUTORIZACION" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_EMPRESA_Result">
+    <Property Type="Guid" Name="ID_EMPRESA" Nullable="false" />
+    <Property Type="String" Name="CL_EMPRESA" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="NB_EMPRESA" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="DS_EMPRESA" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_LICENCIA_Result">
+    <Property Type="Guid" Name="ID_LICENCIA" Nullable="false" />
+    <Property Type="String" Name="CL_LICENCIA" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="NB_LICENCIA" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="FG_PERIODO" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="FG_VOLUMEN" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="DS_LICENCIA" Nullable="false" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_MODULO_Result">
+    <Property Type="Guid" Name="ID_MODULO" Nullable="false" />
+    <Property Type="String" Name="CL_MODULO" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="NB_MODULO" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="DS_MODULO" Nullable="true" MaxLength="500" />
+    <Property Type="Guid" Name="ID_SISTEMA" Nullable="false" />
+    <Property Type="String" Name="NB_SISTEMA" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="CL_SISTEMA" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_SISTEMA_Result">
+    <Property Type="Guid" Name="ID_SISTEMA" Nullable="false" />
+    <Property Type="String" Name="CL_SISTEMA" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="NB_SISTEMA" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="CL_TIPO" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="DS_SISTEMA" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_VERSION_Result">
+    <Property Type="Guid" Name="ID_VERSION" Nullable="false" />
+    <Property Type="Decimal" Name="NO_RELEASE" Nullable="false" Precision="13" Scale="2" />
+    <Property Type="String" Name="DS_VERSION" Nullable="true" MaxLength="500" />
+    <Property Type="Guid" Name="ID_MODULO" Nullable="false" />
+    <Property Type="String" Name="NB_MODULO" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="CL_MODULO" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_K_GESTION_PERIODOS_Result">
+    <Property Type="Guid" Name="ID_GESTION_PERIODO" Nullable="false" />
+    <Property Type="Guid" Name="ID_CLIENTE" Nullable="false" />
+    <Property Type="String" Name="NB_CLIENTE" Nullable="false" MaxLength="200" />
+    <Property Type="Guid" Name="ID_SISTEMA" Nullable="false" />
+    <Property Type="String" Name="NB_SISTEMA" Nullable="false" MaxLength="200" />
+    <Property Type="Guid" Name="ID_EMPRESA" Nullable="false" />
+    <Property Type="String" Name="NB_EMPRESA" Nullable="false" MaxLength="200" />
+    <Property Type="Guid" Name="ID_MODULO" Nullable="false" />
+    <Property Type="String" Name="NB_MODULO" Nullable="false" MaxLength="200" />
+    <Property Type="Guid" Name="ID_VERSION" Nullable="false" />
+    <Property Type="Decimal" Name="NO_RELEASE" Nullable="false" Precision="13" Scale="2" />
+    <Property Type="Guid" Name="ID_LICENCIA" Nullable="false" />
+    <Property Type="String" Name="NB_LICENCIA" Nullable="false" MaxLength="200" />
+    <Property Type="DateTime" Name="FE_INICIO" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FE_FIN" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="NO_VOLUMEN" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_LICENCIAMIENTO_Result">
+    <Property Type="Guid" Name="ID_GESTION_PERIODO" Nullable="false" />
+    <Property Type="String" Name="CL_CLIENTE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CL_PASSWORD" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CL_SISTEMA" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CL_EMPRESA" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CL_MODULO" Nullable="false" MaxLength="10" />
+    <Property Type="Decimal" Name="NO_RELEASE" Nullable="false" Precision="13" Scale="2" />
+    <Property Type="String" Name="CL_LICENCIA" Nullable="false" MaxLength="10" />
+    <Property Type="DateTime" Name="FE_INICIO" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FE_FIN" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="NO_VOLUMEN" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_C_CLIENTES_Result">
+    <Property Type="Guid" Name="ID_CLIENTE" Nullable="false" />
+    <Property Type="String" Name="CL_CLIENTE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CL_PASSWORD" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NB_CLIENTE" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="NB_CONTACTO" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="CL_EMAIL" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="XML_TELEFONOS" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="NB_EJECUTIVO_CUENTA" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_CLIENTE_CATALOGOS_Result">
+    <Property Type="Guid" Name="ID_CLIENTE" Nullable="true" />
+    <Property Type="String" Name="CL_CLIENTE" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CL_PASSWORD" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NB_CLIENTE" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="NB_CONTACTO" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="CL_EMAIL" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="XML_TELEFONOS" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="NB_EJECUTIVO_CUENTA" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="CATALOGOS" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_INFORMACION_CLIENTE_Result">
+    <Property Type="Guid" Name="ID_CLIENTE" Nullable="true" />
+    <Property Type="String" Name="CL_CLIENTE" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="FE_CREACION" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="CL_PASSWORD" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CATALOGOS" Nullable="true" MaxLength="Max" />
+  </ComplexType>
+  <ComplexType Name="SPE_OBTIENE_LICENCIAS_Result">
+    <Property Type="String" Name="XML_LICENCIAS" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="FE_CREACION" Nullable="true" MaxLength="20" />
+  </ComplexType>
+</Schema>

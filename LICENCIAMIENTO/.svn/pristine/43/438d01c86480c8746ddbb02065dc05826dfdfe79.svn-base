@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79C6CAAA-2835-4859-8AAF-A69572FC963E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApp</RootNamespace>
+    <AssemblyName>WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Design, Version=2017.2.503.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Device.Detection, Version=2016.2.607.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\Telerik.Web.Device.Detection.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Spreadsheet, Version=2016.2.505.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2016.2.607.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2016.2.607.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2016.2.421.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2016.2.421.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Fixed.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2016.2.421.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Version=2016.2.421.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2016.2.421.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2016.2.421.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2016.2.421.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2016.2.421.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip.Extensions">
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administracion\Catalogos\Clientes.aspx" />
+    <Content Include="Administracion\Catalogos\Empresas.aspx" />
+    <Content Include="Administracion\Catalogos\Licencias.aspx" />
+    <Content Include="Administracion\Catalogos\Modulos.aspx" />
+    <Content Include="Administracion\Catalogos\Sistemas.aspx" />
+    <Content Include="Administracion\Catalogos\VentanaClientes.aspx" />
+    <Content Include="Administracion\Catalogos\VentanaEmpresas.aspx" />
+    <Content Include="Administracion\Catalogos\VentanaLicencias.aspx" />
+    <Content Include="Administracion\Catalogos\VentanaModulos.aspx" />
+    <Content Include="Administracion\Catalogos\VentanaSistemas.aspx" />
+    <Content Include="Administracion\Catalogos\VentanaVersiones.aspx" />
+    <Content Include="Administracion\Catalogos\Versiones.aspx" />
+    <Content Include="Administracion\Roles.aspx" />
+    <Content Include="Administracion\VentanaRoles.aspx" />
+    <Content Include="Assets\AdvancedTools.xml" />
+    <Content Include="Assets\BasicTools.xml" />
+    <Content Include="Assets\css\animate.css" />
+    <Content Include="Assets\css\boostrap-dialog.css" />
+    <Content Include="Assets\css\bootstrap-dialog.min.css" />
+    <Content Include="Assets\css\bootstrap-dialogo-modificado.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\cssOrgChart.css" />
+    <Content Include="Assets\css\estilo.css" />
+    <Content Include="Assets\css\introjs.css" />
+    <Content Include="Assets\css\kendo.bootstrap.min.css" />
+    <Content Include="Assets\css\kendo.common-bootstrap.min.css" />
+    <Content Include="Assets\css\kendo.common.min.css" />
+    <Content Include="Assets\css\kendo.default.min.css" />
+    <Content Include="Assets\css\nprogress.css" />
+    <Content Include="Assets\css\Temas\EO.css" />
+    <Content Include="Assets\css\Temas\FD.css" />
+    <Content Include="Assets\css\Temas\General.css" />
+    <Content Include="Assets\css\Temas\IP.css" />
+    <Content Include="Assets\css\Temas\MC.css" />
+    <Content Include="Assets\css\Temas\Nomina.css" />
+    <Content Include="Assets\css\Temas\PDE.css" />
+    <Content Include="Assets\css\Temas\PuntoEncuentro.css" />
+    <Content Include="Assets\css\Temas\Sin título.png" />
+    <Content Include="Assets\css\Temas\TC.css" />
+    <Content Include="Assets\css\Temas\ToolTipPointer.png" />
+    <Content Include="Assets\css\Temas\ToolTipPointer_EO.png" />
+    <Content Include="Assets\css\Temas\ToolTipPointer_FD.png" />
+    <Content Include="Assets\css\Temas\ToolTipPointer_GR.png" />
+    <Content Include="Assets\css\Temas\ToolTipPointer_IP.png" />
+    <Content Include="Assets\css\Temas\ToolTipPointer_MC.png" />
+    <Content Include="Assets\css\Temas\ToolTipPointer_N.png" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\images\Aceptar.png" />
+    <Content Include="Assets\images\Acrux.png" />
+    <Content Include="Assets\images\Advertencia.png" />
+    <Content Include="Assets\images\alto.png" />
+    <Content Include="Assets\images\arrow-up.png" />
+    <Content Include="Assets\images\arrow.png" />
+    <Content Include="Assets\images\BaremosAmarillo.png" />
+    <Content Include="Assets\images\BaremosGris.png" />
+    <Content Include="Assets\images\BaremosInvalido.png" />
+    <Content Include="Assets\images\BaremosRojo.png" />
+    <Content Include="Assets\images\BaremosVerde.png" />
+    <Content Include="Assets\images\Cancelar.png" />
+    <Content Include="Assets\images\Eliminar.png" />
+    <Content Include="Assets\images\email.png" />
+    <Content Include="Assets\images\Error.png" />
+    <Content Include="Assets\images\EstadosUnidos.png" />
+    <Content Include="Assets\images\EstiloPensamiento.jpg" />
+    <Content Include="Assets\images\EstiloPensamientoCopy.jpg" />
+    <Content Include="Assets\images\excel.png" />
+    <Content Include="Assets\images\Exito.png" />
+    <Content Include="Assets\images\FlechaAbajo.png" />
+    <Content Include="Assets\images\FlechaDerecha.png" />
+    <Content Include="Assets\images\FlechaIzquierda.png" />
+    <Content Include="Assets\images\Icono.png" />
+    <Content Include="Assets\images\Icons\25\ArrowDelete.png" />
+    <Content Include="Assets\images\Icons\25\ArrowDown.png" />
+    <Content Include="Assets\images\Icons\25\ArrowDownBlanco.png" />
+    <Content Include="Assets\images\Icons\25\ArrowEqual.png" />
+    <Content Include="Assets\images\Icons\25\ArrowUp.png" />
+    <Content Include="Assets\images\Icons\25\ArrowUpBlanco.png" />
+    <Content Include="Assets\images\Icons\25\Bill.png" />
+    <Content Include="Assets\images\Icons\25\Bullish.png" />
+    <Content Include="Assets\images\Icons\25\CircledUserMale.png" />
+    <Content Include="Assets\images\Icons\25\ComboChart.png" />
+    <Content Include="Assets\images\Icons\25\ConferenceCall.png" />
+    <Content Include="Assets\images\Icons\25\Diploma.png" />
+    <Content Include="Assets\images\Icons\25\Document.png" />
+    <Content Include="Assets\images\Icons\25\EditProperty.png" />
+    <Content Include="Assets\images\Icons\25\Exit.png" />
+    <Content Include="Assets\images\Icons\25\FinePrint.png" />
+    <Content Include="Assets\images\Icons\25\Home.png" />
+    <Content Include="Assets\images\Icons\25\homePDE.png" />
+    <Content Include="Assets\images\Icons\25\igual.png" />
+    <Content Include="Assets\images\Icons\25\menor.png" />
+    <Content Include="Assets\images\Icons\25\noaplica.png" />
+    <Content Include="Assets\images\Icons\25\Settings.png" />
+    <Content Include="Assets\images\Icons\25\UserGroups.png" />
+    <Content Include="Assets\images\Icons\25\UserGroupsFilled.png" />
+    <Content Include="Assets\images\Icons\25\Workflow.png" />
+    <Content Include="Assets\images\icon_cancel.png" />
+    <Content Include="Assets\images\icon_delete.png" />
+    <Content Include="Assets\images\icon_edit.png" />
+    <Content Include="Assets\images\icon_save.png" />
+    <Content Include="Assets\images\LoginUsuario.png" />
+    <Content Include="Assets\images\Logo.png" />
+    <Content Include="Assets\images\logoemail.png" />
+    <Content Include="Assets\images\LogotipoNombre.png" />
+    <Content Include="Assets\images\menu\Comunicados.jpg" />
+    <Content Include="Assets\images\menu\ConsultasInteligentes500x334.png" />
+    <Content Include="Assets\images\menu\ConsultasInteligentes600x344.png" />
+    <Content Include="Assets\images\menu\Descriptivo.jpg" />
+    <Content Include="Assets\images\menu\EvaluacionOrganizacional500x334.png" />
+    <Content Include="Assets\images\menu\EvaluacionOrganizacional600x344.png" />
+    <Content Include="Assets\images\menu\FormacionyDesarrollo500x334.png" />
+    <Content Include="Assets\images\menu\FormacionyDesarrollo600x344.png" />
+    <Content Include="Assets\images\menu\Formatos.jpg" />
+    <Content Include="Assets\images\menu\Informacion.jpg" />
+    <Content Include="Assets\images\menu\IntegraciondePersonal500x334.png" />
+    <Content Include="Assets\images\menu\IntegraciondePersonal600x344.png" />
+    <Content Include="Assets\images\menu\Inventario.jpg" />
+    <Content Include="Assets\images\menu\Menu.jpg" />
+    <Content Include="Assets\images\menu\Menu.png" />
+    <Content Include="Assets\images\menu\MetodologiaparalaCompensacion500x334.png" />
+    <Content Include="Assets\images\menu\MetodologiaparalaCompensacion600x344.png" />
+    <Content Include="Assets\images\menu\Nomina500x334.png" />
+    <Content Include="Assets\images\menu\Nomina600x344.png" />
+    <Content Include="Assets\images\menu\Notificaciones.jpg" />
+    <Content Include="Assets\images\menu\NotificacionesTramites.jpg" />
+    <Content Include="Assets\images\menu\Punto de encuentro.jpg" />
+    <Content Include="Assets\images\menu\PuntodeEncuentro500x334.png" />
+    <Content Include="Assets\images\menu\PuntodeEncuentro600x344.png" />
+    <Content Include="Assets\images\menu\ReportesPersonalizados500x334.png" />
+    <Content Include="Assets\images\menu\ReportesPersonalizados600x344.png" />
+    <Content Include="Assets\images\menu\Tramite.jpg" />
+    <Content Include="Assets\images\Mexico.png" />
+    <Content Include="Assets\images\no-image.png" />
+    <Content Include="Assets\images\PDE\Adjunto.png" />
+    <Content Include="Assets\images\PDE\information.png" />
+    <Content Include="Assets\images\PDE\play.png" />
+    <Content Include="Assets\images\pdf.png" />
+    <Content Include="Assets\images\perfil.jpg" />
+    <Content Include="Assets\images\Process.png" />
+    <Content Include="Assets\images\pruebaActivada.png" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherAmarillo4.jpg" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherAzul1.jpg" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherBlank.jpg" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherGris0.jpg" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherMarron6.jpg" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherNegro7.jpg" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherRojo3.jpg" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherVerde2.jpg" />
+    <Content Include="Assets\images\PruebaAdaptacionMedio\LuscherVioleta5.jpg" />
+    <Content Include="Assets\images\pruebaDesactivada.png" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo0.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo1.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo10.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo11.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo12.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo13.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo2.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo3.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo4.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo5.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo6.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo7.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo8.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAmarillo9.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul0.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul1.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul10.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul11.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul12.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul13.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul2.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul3.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul4.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul5.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul6.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul7.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul8.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoAzul9.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoGraficaBase.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo0.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo1.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo10.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo11.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo12.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo13.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo2.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo3.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo4.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo5.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo6.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo7.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo8.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoRojo9.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde0.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde1.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde10.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde11.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde12.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde13.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde2.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde3.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde4.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde5.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde6.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde7.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde8.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\LifoVerde9.gif" />
+    <Content Include="Assets\images\PruebaLaboralII\PsicometriaBack.bmp" />
+    <Content Include="Assets\images\search.png" />
+    <Content Include="Assets\images\StatusPDE.png" />
+    <Content Include="Assets\images\TituloBannerSigein.png" />
+    <Content Include="Assets\images\TituloBannerSuperior.png" />
+    <Content Include="Assets\images\WebResource.png" />
+    <Content Include="Assets\js\appIndex.js" />
+    <Content Include="Assets\js\appOrgChart.js" />
+    <Content Include="Assets\js\appPruebas.js" />
+    <Content Include="Assets\js\Graph.js" />
+    <Content Include="Assets\js\jquery.min.js" />
+    <Content Include="Assets\js\PopUps.js" />
+    <Content Include="Assets\library\font-awesome\css\font-awesome.css" />
+    <Content Include="Assets\library\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Assets\library\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\PDETools.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="Gestion\GestionPeriodos.aspx" />
+    <Content Include="Gestion\VentanaGestion.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Logout.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AcruxLic.Master" />
+    <Content Include="Assets\css\images\kendoui.ttf" />
+    <Content Include="Assets\css\images\kendoui.woff" />
+    <Content Include="Assets\css\Temas\Thumbs.db" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Assets\images\Icons\25\Thumbs.db" />
+    <Content Include="Assets\library\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\library\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\library\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\library\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\library\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Assets\library\font-awesome\less\animated.less" />
+    <Content Include="Assets\library\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Assets\library\font-awesome\less\core.less" />
+    <Content Include="Assets\library\font-awesome\less\fixed-width.less" />
+    <Content Include="Assets\library\font-awesome\less\font-awesome.less" />
+    <Content Include="Assets\library\font-awesome\less\icons.less" />
+    <Content Include="Assets\library\font-awesome\less\larger.less" />
+    <Content Include="Assets\library\font-awesome\less\list.less" />
+    <Content Include="Assets\library\font-awesome\less\mixins.less" />
+    <Content Include="Assets\library\font-awesome\less\path.less" />
+    <Content Include="Assets\library\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Assets\library\font-awesome\less\stacked.less" />
+    <Content Include="Assets\library\font-awesome\less\variables.less" />
+    <Content Include="Assets\library\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_animated.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_core.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_icons.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_larger.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_list.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_mixins.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_path.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_stacked.scss" />
+    <Content Include="Assets\library\font-awesome\scss\_variables.scss" />
+    <Content Include="Assets\reports\IDP\Aptitud1.mrt" />
+    <Content Include="Assets\reports\IDP\Descriptivo.mrt" />
+    <Content Include="Assets\reports\IDP\Descriptivo2.mrt" />
+    <Content Include="Assets\reports\IDP\EstiloPensamiento.mrt" />
+    <Content Include="Assets\reports\IDP\Ingles.mrt" />
+    <Content Include="Assets\reports\IDP\InteresesPersonales.mrt" />
+    <Content Include="Assets\reports\IDP\Laboral1.mrt" />
+    <Content Include="Assets\reports\IDP\Laboral2.mrt" />
+    <Content Include="Assets\reports\IDP\Mental2.mrt" />
+    <Content Include="Assets\reports\IDP\OrtografiaI.mrt" />
+    <Content Include="Assets\reports\IDP\OrtografiaII.mrt" />
+    <Content Include="Assets\reports\IDP\OrtografiaIII.mrt" />
+    <Content Include="Assets\reports\IDP\Prueba.mrt" />
+    <Content Include="Assets\reports\IDP\ReporteConsultaPersonalDetallada.mrt" />
+    <Content Include="Assets\reports\IDP\ReporteConsultaResumida.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosAdaptacion.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosAptitud1.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosAptitud2.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosEstilo.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosIngles.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosInteresesPersonales.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosLaboral1.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosLaboral2.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosOrtografia.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosTecnicaPc.mrt" />
+    <Content Include="Assets\reports\IDP\ResultadosTiva.mrt" />
+    <Content Include="Assets\reports\IDP\TecnicaPC.mrt" />
+    <Content Include="Assets\reports\IDP\Tiva.mrt" />
+    <Content Include="ContextHTML.master" />
+    <Content Include="Menu.master" />
+    <Content Include="WS\Licencia.svc" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcruxLic.Master.cs">
+      <DependentUpon>AcruxLic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcruxLic.Master.designer.cs">
+      <DependentUpon>AcruxLic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Empresas.aspx.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Empresas.aspx.designer.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Licencias.aspx.cs">
+      <DependentUpon>Licencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Licencias.aspx.designer.cs">
+      <DependentUpon>Licencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Modulos.aspx.cs">
+      <DependentUpon>Modulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Modulos.aspx.designer.cs">
+      <DependentUpon>Modulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Sistemas.aspx.cs">
+      <DependentUpon>Sistemas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Sistemas.aspx.designer.cs">
+      <DependentUpon>Sistemas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaClientes.aspx.cs">
+      <DependentUpon>VentanaClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaClientes.aspx.designer.cs">
+      <DependentUpon>VentanaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaEmpresas.aspx.cs">
+      <DependentUpon>VentanaEmpresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaEmpresas.aspx.designer.cs">
+      <DependentUpon>VentanaEmpresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaLicencias.aspx.cs">
+      <DependentUpon>VentanaLicencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaLicencias.aspx.designer.cs">
+      <DependentUpon>VentanaLicencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaModulos.aspx.cs">
+      <DependentUpon>VentanaModulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaModulos.aspx.designer.cs">
+      <DependentUpon>VentanaModulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaSistemas.aspx.cs">
+      <DependentUpon>VentanaSistemas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaSistemas.aspx.designer.cs">
+      <DependentUpon>VentanaSistemas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaVersiones.aspx.cs">
+      <DependentUpon>VentanaVersiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\VentanaVersiones.aspx.designer.cs">
+      <DependentUpon>VentanaVersiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Versiones.aspx.cs">
+      <DependentUpon>Versiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Catalogos\Versiones.aspx.designer.cs">
+      <DependentUpon>Versiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\VentanaRoles.aspx.cs">
+      <DependentUpon>VentanaRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\VentanaRoles.aspx.designer.cs">
+      <DependentUpon>VentanaRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadGrid.Main.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadGrid.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadGrid.Main.es.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadGrid.Main.es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Comunes\ContextoUsuario.cs" />
+    <Compile Include="Comunes\Crypto.cs" />
+    <Compile Include="Comunes\Utileria.cs" />
+    <Compile Include="Comunes\UtilMensajes.cs" />
+    <Compile Include="ContextHTML.master.cs">
+      <DependentUpon>ContextHTML.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContextHTML.master.designer.cs">
+      <DependentUpon>ContextHTML.master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion\GestionPeriodos.aspx.cs">
+      <DependentUpon>GestionPeriodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion\GestionPeriodos.aspx.designer.cs">
+      <DependentUpon>GestionPeriodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion\VentanaGestion.aspx.cs">
+      <DependentUpon>VentanaGestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion\VentanaGestion.aspx.designer.cs">
+      <DependentUpon>VentanaGestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.master.cs">
+      <DependentUpon>Menu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.master.designer.cs">
+      <DependentUpon>Menu.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WS\ILicencia.cs" />
+    <Compile Include="WS\Licencia.svc.cs">
+      <DependentUpon>Licencia.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{d66f0416-544f-4f04-881f-01cc4e912c8b}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{197e61bc-deda-4087-9981-2f8952acf218}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\reports\EO\" />
+    <Folder Include="Assets\reports\FYD\" />
+    <Folder Include="Assets\reports\MPC\" />
+    <Folder Include="Assets\reports\PDE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\RadGrid.Main.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadGrid.Main.es.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadGrid.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadGrid.Main.Designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51765</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51765/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

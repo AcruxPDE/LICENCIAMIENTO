@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D66F0416-544F-4F04-881F-01CC4E912C8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\RCAJAX\2016.2.607.45\AdditionalLibraries\Bin45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion\E_FUNCION.cs" />
+    <Compile Include="Administracion\E_ROL.cs" />
+    <Compile Include="Administracion\E_ROL_FUNCION.cs" />
+    <Compile Include="Administracion\E_USUARIO.cs" />
+    <Compile Include="Externas\E_CLIENTES.cs" />
+    <Compile Include="Externas\E_EMPRESA.cs" />
+    <Compile Include="Externas\E_GESTION_PERIODO.cs" />
+    <Compile Include="Externas\E_IDIOMA_ENUM.cs" />
+    <Compile Include="Externas\E_INFORMACION_CLIENTE.cs" />
+    <Compile Include="Externas\E_LICENCIA.cs" />
+    <Compile Include="Externas\E_LICENCIAMIENTO.cs" />
+    <Compile Include="Externas\E_MENU.cs" />
+    <Compile Include="Externas\E_MODULO.cs" />
+    <Compile Include="Externas\E_PRUEBA_LABORAL_I.cs" />
+    <Compile Include="Externas\E_RESULTADO.cs" />
+    <Compile Include="Externas\E_SISTEMA.cs" />
+    <Compile Include="Externas\E_TELEFONOS.cs" />
+    <Compile Include="Externas\E_TIPO_DATO.cs" />
+    <Compile Include="Externas\E_TIPO_FUNCION.cs" />
+    <Compile Include="Externas\E_TIPO_OPERACION_DB.cs" />
+    <Compile Include="Externas\E_TIPO_RESPUESTA_DB.cs" />
+    <Compile Include="Externas\E_VERSION.cs" />
+    <Compile Include="E_LOGIN.cs" />
+    <Compile Include="Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPE_OBTIENE_CLIENTE_CATALOGOS_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_CATALOGO_LISTA_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_CATALOGO_VALOR_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_CLIENTES_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_EMPRESA_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_LICENCIA_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_MODULO_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_ROL_FUNCION_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_ROL_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_SISTEMA_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_USUARIO_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_C_VERSION_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_INFORMACION_CLIENTE_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_K_GESTION_PERIODOS_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_LICENCIAMIENTO_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_LICENCIAS_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_ROLES_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_ROL_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_S_CATALOGO_TIPO_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_S_CONFIGURACION_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_S_FUNCION_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SPE_OBTIENE_USUARIO_AUTENTICACION_Result.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utilerias\E_MENU.cs" />
+    <Compile Include="Utilerias\PasswordHash.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

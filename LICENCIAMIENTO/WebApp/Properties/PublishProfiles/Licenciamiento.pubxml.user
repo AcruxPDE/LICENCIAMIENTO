@@ -1,0 +1,1054 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\JCO\Documents\LICENCIAMIENTO</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AcruxLic.Master">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/Clientes.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/Empresas.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/Licencias.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/Modulos.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/Sistemas.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/VentanaClientes.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/VentanaEmpresas.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/VentanaLicencias.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/VentanaModulos.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/VentanaSistemas.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/VentanaVersiones.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Catalogos/Versiones.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/Roles.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Administracion/VentanaRoles.aspx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadGrid.Main.es.resx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadGrid.Main.resx">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/AdvancedTools.xml">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/BasicTools.xml">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/animate.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/boostrap-dialog.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-dialog.min.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-dialogo-modificado.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap.min.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/cssOrgChart.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/estilo.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/images/kendoui.ttf">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/images/kendoui.woff">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/introjs.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/kendo.bootstrap.min.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/kendo.common-bootstrap.min.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/kendo.common.min.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/kendo.default.min.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/nprogress.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/EO.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/FD.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/General.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/IP.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/MC.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/Nomina.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/PDE.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/PuntoEncuentro.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/Sin título.png">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/TC.css">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/ToolTipPointer.png">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/ToolTipPointer_EO.png">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/ToolTipPointer_FD.png">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/ToolTipPointer_GR.png">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/ToolTipPointer_IP.png">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/ToolTipPointer_MC.png">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/css/Temas/ToolTipPointer_N.png">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Aceptar.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Acrux.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Advertencia.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/alto.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/arrow-up.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/arrow.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/BaremosAmarillo.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/BaremosGris.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/BaremosInvalido.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/BaremosRojo.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/BaremosVerde.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Cancelar.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Eliminar.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/email.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/Error.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/EstadosUnidos.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/EstiloPensamiento.jpg">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/EstiloPensamientoCopy.jpg">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/excel.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/Exito.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/FlechaAbajo.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/FlechaDerecha.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/FlechaIzquierda.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icono.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/ArrowDelete.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/ArrowDown.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/ArrowDownBlanco.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/ArrowEqual.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/ArrowUp.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/ArrowUpBlanco.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/Bill.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/Bullish.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/CircledUserMale.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/ComboChart.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/ConferenceCall.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/Diploma.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/Document.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/EditProperty.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/Exit.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/FinePrint.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/Home.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/homePDE.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/igual.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/menor.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/noaplica.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/Settings.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/UserGroups.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/UserGroupsFilled.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Icons/25/Workflow.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/icon_cancel.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/icon_delete.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/icon_edit.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/icon_save.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/LoginUsuario.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/Logo.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/logoemail.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/LogotipoNombre.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Comunicados.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/ConsultasInteligentes500x334.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/ConsultasInteligentes600x344.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Descriptivo.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/EvaluacionOrganizacional500x334.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/EvaluacionOrganizacional600x344.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/FormacionyDesarrollo500x334.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/FormacionyDesarrollo600x344.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Formatos.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Informacion.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/IntegraciondePersonal500x334.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/IntegraciondePersonal600x344.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Inventario.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Menu.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Menu.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/MetodologiaparalaCompensacion500x334.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/MetodologiaparalaCompensacion600x344.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Nomina500x334.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Nomina600x344.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Notificaciones.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/NotificacionesTramites.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Punto de encuentro.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/PuntodeEncuentro500x334.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/PuntodeEncuentro600x344.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/ReportesPersonalizados500x334.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/ReportesPersonalizados600x344.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/menu/Tramite.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/Mexico.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/no-image.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/PDE/Adjunto.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/PDE/information.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/PDE/play.png">
+      <publishTime>01/11/2018 16:15:18</publishTime>
+    </File>
+    <File Include="Assets/images/pdf.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/perfil.jpg">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/Process.png">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/pruebaActivada.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherAmarillo4.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherAzul1.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherBlank.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherGris0.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherMarron6.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherNegro7.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherRojo3.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherVerde2.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaAdaptacionMedio/LuscherVioleta5.jpg">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/pruebaDesactivada.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo0.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo1.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo10.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo11.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo12.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo13.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo2.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo3.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo4.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo5.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo6.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo7.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo8.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAmarillo9.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul0.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul1.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul10.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul11.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul12.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul13.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul2.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul3.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul4.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul5.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul6.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul7.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul8.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoAzul9.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoGraficaBase.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo0.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo1.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo10.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo11.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo12.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo13.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo2.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo3.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo4.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo5.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo6.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo7.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo8.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoRojo9.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde0.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde1.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde10.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde11.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde12.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde13.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde2.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde3.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde4.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde5.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde6.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde7.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde8.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/LifoVerde9.gif">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/PruebaLaboralII/PsicometriaBack.bmp">
+      <publishTime>01/11/2018 16:15:19</publishTime>
+    </File>
+    <File Include="Assets/images/search.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/StatusPDE.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/TituloBannerSigein.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/TituloBannerSuperior.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/images/WebResource.png">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/js/appIndex.js">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/js/appOrgChart.js">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/js/appPruebas.js">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/js/Graph.js">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/js/jquery.min.js">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/js/PopUps.js">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/css/font-awesome.css">
+      <publishTime>01/11/2018 16:15:20</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/css/font-awesome.min.css">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/fonts/FontAwesome.otf">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/animated.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/bordered-pulled.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/core.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/fixed-width.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/font-awesome.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/icons.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/larger.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/list.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/mixins.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/path.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/rotated-flipped.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/stacked.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/less/variables.less">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/font-awesome.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_animated.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_bordered-pulled.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_core.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_fixed-width.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_icons.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_larger.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_list.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_mixins.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_path.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_rotated-flipped.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_stacked.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/library/font-awesome/scss/_variables.scss">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/PDETools.xml">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Aptitud1.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Descriptivo.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Descriptivo2.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/EstiloPensamiento.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Ingles.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/InteresesPersonales.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Laboral1.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Laboral2.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Mental2.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/OrtografiaI.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/OrtografiaII.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/OrtografiaIII.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Prueba.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ReporteConsultaPersonalDetallada.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ReporteConsultaResumida.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosAdaptacion.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosAptitud1.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosAptitud2.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosEstilo.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosIngles.mrt">
+      <publishTime>01/11/2018 16:15:21</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosInteresesPersonales.mrt">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosLaboral1.mrt">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosLaboral2.mrt">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosOrtografia.mrt">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosTecnicaPc.mrt">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/ResultadosTiva.mrt">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/TecnicaPC.mrt">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Assets/reports/IDP/Tiva.mrt">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="bin/AccesoDatos.dll">
+      <publishTime>01/11/2018 16:22:59</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>01/11/2018 16:15:17</publishTime>
+    </File>
+    <File Include="bin/Entidades.dll">
+      <publishTime>01/11/2018 16:22:59</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/11/2018 16:15:31</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>01/11/2018 16:15:31</publishTime>
+    </File>
+    <File Include="bin/EnvDTE.dll">
+      <publishTime>10/22/2009 19:51:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>01/11/2018 16:15:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>01/11/2018 16:15:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>01/11/2018 16:15:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>01/11/2018 16:15:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>01/11/2018 16:15:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>01/11/2018 16:15:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>01/11/2018 16:15:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>01/11/2018 16:15:39</publishTime>
+    </File>
+    <File Include="bin/Negocio.dll">
+      <publishTime>01/11/2018 16:23:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>01/11/2018 16:15:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>01/11/2018 16:15:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>01/11/2018 16:15:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>01/11/2018 16:15:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>01/11/2018 16:15:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>01/11/2018 16:15:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>01/11/2018 16:15:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/11/2018 16:15:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/11/2018 16:15:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>01/11/2018 16:15:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>01/11/2018 16:15:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>01/11/2018 16:15:41</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>07/07/2015 00:51:38</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Design.dll">
+      <publishTime>01/11/2018 16:15:29</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Device.Detection.dll">
+      <publishTime>01/11/2018 16:15:29</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Spreadsheet.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>01/11/2018 16:15:30</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>01/11/2018 16:15:29</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Core.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Fixed.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Flow.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Zip.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Zip.Extensions.dll">
+      <publishTime>01/11/2018 16:15:26</publishTime>
+    </File>
+    <File Include="bin/WebApp.dll">
+      <publishTime>01/11/2018 16:26:41</publishTime>
+    </File>
+    <File Include="ContextHTML.master">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Gestion/GestionPeriodos.aspx">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Gestion/VentanaGestion.aspx">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Menu.master">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/11/2018 16:23:09</publishTime>
+    </File>
+    <File Include="WS/Licencia.svc">
+      <publishTime>01/11/2018 16:15:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

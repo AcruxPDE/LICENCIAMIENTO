@@ -1,0 +1,12 @@
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\AccesoDatos.dll.config
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\AccesoDatos.dll
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\AccesoDatos.pdb
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\Entidades.dll
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\EntityFramework.dll
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\Entidades.pdb
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\EntityFramework.xml
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\obj\Release\AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\obj\Release\AccesoDatos.dll
+C:\Users\JCO\Documents\Visual Studio 2012\Projects\LICENCIAMIENTO\trunk\AccesoDatos\obj\Release\AccesoDatos.pdb
