@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ACRUXLICENCIAMIENTOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="SPE_ELIMINA_C_CATALOGO_LISTA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_CATALOGO_LISTA" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_CATALOGO_VALOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_CATALOGO_VALOR" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_CLIENTE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_CLIENTE" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_EMPRESA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_EMPRESA" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_LICENCIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_LICENCIA" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_MODULO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_MODULO" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_ROL_FUNCION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="POUT_CLAVE_RETORNO" Type="varchar" Mode="InOut" />
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_ID_FUNCION" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_SISTEMA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_SISTEMA" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_USUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_C_VERSION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_VERSION" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_ROL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_S_CATALOGO_TIPO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_CATALOGO_TIPO" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_ELIMINA_S_FUNCION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_FUNCION" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_CATALOGO_LISTA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_CATALOGO_LISTA" Type="int" Mode="In" />
+    <Parameter Name="PIN_NB_CATALOGO_LISTA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_CATALOGO_LISTA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_ID_CATALOGO_TIPO" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_CATALOGO_VALOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_CATALOGO_VALOR" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_CATALOGO_VALOR" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_CATALOGO_VALOR" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_CATALOGO_VALOR" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_ID_CATALOGO_LISTA" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_CLIENTE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_CLIENTE" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_CLIENTE" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_PASSWORD" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_CLIENTE" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_CONTACTO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_EMAIL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_XML_TELEFONOS" Type="xml" Mode="In" />
+    <Parameter Name="PIN_XML_EMPRESAS" Type="xml" Mode="In" />
+    <Parameter Name="PIN_NB_EJECUTIVO_CUENTA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_EMPRESA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_EMPRESA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_EMPRESA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_EMPRESA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_EMPRESA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_LICENCIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_LICENCIA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_LICENCIA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_LICENCIA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_FG_PERIODO" Type="bit" Mode="In" />
+    <Parameter Name="PIN_FG_VOLUMEN" Type="bit" Mode="In" />
+    <Parameter Name="PIN_DS_LICENCIA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_MODULO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_MODULO" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_MODULO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_MODULO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_MODULO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_ID_SISTEMA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_ROL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_ROL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_ROL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_XML_AUTORIZACION" Type="xml" Mode="In" />
+    <Parameter Name="PIN_FG_ACTIVO" Type="bit" Mode="In" />
+    <Parameter Name="PIN_FE_INACTIVO" Type="datetime" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_ROL_FUNCION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_ID_FUNCION" Type="int" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_SISTEMA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_SISTEMA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_SISTEMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_SISTEMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_TIPO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_SISTEMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_USUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_CORREO_ELECTRONICO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PASSWORD" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_FG_CAMBIAR_PASSWORD" Type="bit" Mode="In" />
+    <Parameter Name="PIN_XML_PERSONALIZACION" Type="xml" Mode="In" />
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_ID_EMPLEADO" Type="int" Mode="In" />
+    <Parameter Name="PIN_FG_ACTIVO" Type="bit" Mode="In" />
+    <Parameter Name="PIN_FE_INACTIVO" Type="datetime" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_C_VERSION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_VERSION" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_MODULO" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_NO_RELEASE" Type="decimal" Mode="In" />
+    <Parameter Name="PIN_DS_VERSION" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_ROLES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_ROL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_ROL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_FG_ACTIVO" Type="bit" Mode="In" />
+    <Parameter Name="PIN_XML_FUNCIONES" Type="xml" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_S_CATALOGO_TIPO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_CATALOGO_TIPO" Type="int" Mode="In" />
+    <Parameter Name="PIN_NB_CATALOGO_TIPO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_CATALOGO_TIPO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_S_CONFIGURACION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_XML_CONFIGURACION" Type="xml" Mode="In" />
+    <Parameter Name="PIN_FI_LOGOTIPO" Type="varbinary(max)" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_MODIFICA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_S_FUNCION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_FUNCION" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_FUNCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_TIPO_FUNCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_FUNCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_ID_FUNCION_PADRE" Type="int" Mode="In" />
+    <Parameter Name="PIN_NB_URL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_XML_CONFIGURACION" Type="xml" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_S_ERROR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_CL_CLAVE" Type="int" Mode="In" />
+    <Parameter Name="PIN_DS_ERROR" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_APP_CREA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA_CREA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_CATALOGO_LISTA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_CATALOGO_LISTA" Type="int" Mode="In" />
+    <Parameter Name="PIN_NB_CATALOGO_LISTA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_CATALOGO_LISTA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_ID_CATALOGO_TIPO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_CATALOGO_VALOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_CATALOGO_VALOR" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_CATALOGO_VALOR" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_CATALOGO_VALOR" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_CATALOGO_VALOR" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_ID_CATALOGO_LISTA" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_CLIENTES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_CLIENTE" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_CLIENTE" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_PASSWORD" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_CLIENTE" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_CONTACTO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_EMAIL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_EJECUTIVO_CUENTA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_EMPRESA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_EMPRESA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_EMPRESA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_EMPRESA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_EMPRESA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_LICENCIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_LICENCIA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_LICENCIA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_LICENCIA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_FG_PERIODO" Type="bit" Mode="In" />
+    <Parameter Name="PIN_FG_VOLUMEN" Type="bit" Mode="In" />
+    <Parameter Name="PIN_DS_LICENCIA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_MODULO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_MODULO" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_MODULO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_MODULO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_MODULO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_ID_SISTEMA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_SISTEMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_SISTEMA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_ROL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_ROL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_ROL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_XML_AUTORIZACION" Type="xml" Mode="In" />
+    <Parameter Name="PIN_FG_ACTIVO" Type="bit" Mode="In" />
+    <Parameter Name="PIN_FE_INACTIVO" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_ROL_FUNCION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_ID_FUNCION" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_SISTEMA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_SISTEMA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_CL_SISTEMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_SISTEMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_TIPO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_SISTEMA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_USUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_CORREO_ELECTRONICO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PASSWORD" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_FG_CAMBIAR_PASSWORD" Type="bit" Mode="In" />
+    <Parameter Name="PIN_XML_PERSONALIZACION" Type="xml" Mode="In" />
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+    <Parameter Name="PIN_ID_EMPLEADO" Type="int" Mode="In" />
+    <Parameter Name="PIN_FG_ACTIVO" Type="bit" Mode="In" />
+    <Parameter Name="PIN_FE_INACTIVO" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_C_VERSION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_VERSION" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_MODULO" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_NO_RELEASE" Type="decimal" Mode="In" />
+    <Parameter Name="PIN_DS_VERSION" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_INFORMACION_CLIENTE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_CL_CLIENTE" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_PASSWORD" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_LICENCIAMIENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_CL_CLIENTE" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_PASSWORD" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_SISTEMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_EMPRESA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_MODULO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NO_VERSION" Type="decimal" Mode="In" />
+    <Parameter Name="PIN_CL_LICENCIA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_LICENCIAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_CL_CLIENTE" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_PASSWORD" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_ROL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_ROLES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_ROL" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_S_CATALOGO_TIPO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_CATALOGO_TIPO" Type="int" Mode="In" />
+    <Parameter Name="PIN_NB_CATALOGO_TIPO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_DS_CATALOGO_TIPO" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_S_CONFIGURACION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_XML_CONFIGURACION" Type="xml" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO_MODIFICA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_S_FUNCION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_ID_FUNCION" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_FUNCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_TIPO_FUNCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_FUNCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_ID_FUNCION_PADRE" Type="int" Mode="In" />
+    <Parameter Name="PIN_NB_URL" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_XML_CONFIGURACION" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_USUARIO_AUTENTICACION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="ADM">
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_PASSWORD" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_AUTENTICACION" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="F_ERROR_CREAR_ENCABEZADO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="xml">
+    <Parameter Name="PIN_NO_REGISTROS_AFECTADOS" Type="int" Mode="In" />
+    <Parameter Name="PIN_NO_ERROR" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_TIPO_ERROR" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="F_ERROR_INSERTAR_MENSAJES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="xml">
+    <Parameter Name="PIN_XML_ENCABEZADO" Type="xml" Mode="In" />
+    <Parameter Name="PIN_DS_MENSAJE" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_CL_IDIOMA" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="F_ERROR_MENSAJES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="xml">
+    <Parameter Name="PIN_NO_ERROR" Type="int" Mode="In" />
+    <Parameter Name="PIN_ERROR_MENSAJE" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="F_GETDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="datetime" />
+  <Function Name="SPE_ELIMINA_K_GESTION_PERIODO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="Lic">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_GESTION_PERIODO" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SPE_INSERTA_ACTUALIZA_K_GESTION_PERIODO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="Lic">
+    <Parameter Name="XML_RESULTADO" Type="xml" Mode="InOut" />
+    <Parameter Name="PIN_ID_GESTION_PERIODO" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_CLIENTE" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_SISTEMA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_EMPRESA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_MODULO" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_VERSION" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_LICENCIA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_FE_INICIO" Type="datetime" Mode="In" />
+    <Parameter Name="PIN_FE_FIN" Type="datetime" Mode="In" />
+    <Parameter Name="PIN_NO_VOLUMEN" Type="int" Mode="In" />
+    <Parameter Name="PIN_CL_USUARIO" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_NB_PROGRAMA" Type="nvarchar" Mode="In" />
+    <Parameter Name="PIN_TIPO_TRANSACCION" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_CLIENTE_CATALOGOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="Lic">
+    <Parameter Name="PIN_ID_CLIENTE" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SPE_OBTIENE_K_GESTION_PERIODOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="Lic">
+    <Parameter Name="PIN_ID_GESTION_PERIODO" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_CLIENTE" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_SISTEMA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_EMPRESA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_MODULO" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_VERSION" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_ID_LICENCIA" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PIN_FE_INICIO" Type="datetime" Mode="In" />
+    <Parameter Name="PIN_FE_FIN" Type="datetime" Mode="In" />
+    <Parameter Name="PIN_NO_VOLUMEN" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="ACRUXLICENCIAMIENTOModelStoreContainer" />
+</Schema>

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ACRUXLICENCIAMIENTOModelStoreContainer" CdmEntityContainer="ACRUXLICENCIAMIENTOEntities">
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_CATALOGO_LISTA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_CATALOGO_LISTA" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_CATALOGO_VALOR" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_CATALOGO_VALOR" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_ROL_FUNCION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_ROL_FUNCION" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_USUARIO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_USUARIO" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_ROL" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_ROL" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_S_CATALOGO_TIPO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_S_CATALOGO_TIPO" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_S_FUNCION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_S_FUNCION" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_CATALOGO_LISTA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_CATALOGO_LISTA" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_CATALOGO_VALOR" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_CATALOGO_VALOR" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_ROL" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_ROL" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_ROL_FUNCION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_ROL_FUNCION" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_USUARIO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_USUARIO" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_S_CATALOGO_TIPO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_S_CATALOGO_TIPO" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_S_CONFIGURACION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_S_CONFIGURACION" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_S_FUNCION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_S_FUNCION" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_S_ERROR" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_S_ERROR" />
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_CATALOGO_LISTA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_CATALOGO_LISTA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_CATALOGO_LISTA_Result">
+          <ScalarProperty Name="ID_CATALOGO_LISTA" ColumnName="ID_CATALOGO_LISTA" />
+          <ScalarProperty Name="NB_CATALOGO_LISTA" ColumnName="NB_CATALOGO_LISTA" />
+          <ScalarProperty Name="DS_CATALOGO_LISTA" ColumnName="DS_CATALOGO_LISTA" />
+          <ScalarProperty Name="ID_CATALOGO_TIPO" ColumnName="ID_CATALOGO_TIPO" />
+          <ScalarProperty Name="NB_CATALOGO_TIPO" ColumnName="NB_CATALOGO_TIPO" />
+          <ScalarProperty Name="FG_SISTEMA" ColumnName="FG_SISTEMA" />
+          <ScalarProperty Name="FE_MODIFICACION" ColumnName="FE_MODIFICACION" />
+          <ScalarProperty Name="CL_USUARIO_MODIFICA" ColumnName="CL_USUARIO_MODIFICA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_CATALOGO_VALOR" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_CATALOGO_VALOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_CATALOGO_VALOR_Result">
+          <ScalarProperty Name="ID_CATALOGO_VALOR" ColumnName="ID_CATALOGO_VALOR" />
+          <ScalarProperty Name="CL_CATALOGO_VALOR" ColumnName="CL_CATALOGO_VALOR" />
+          <ScalarProperty Name="NB_CATALOGO_VALOR" ColumnName="NB_CATALOGO_VALOR" />
+          <ScalarProperty Name="DS_CATALOGO_VALOR" ColumnName="DS_CATALOGO_VALOR" />
+          <ScalarProperty Name="ID_CATALOGO_LISTA" ColumnName="ID_CATALOGO_LISTA" />
+          <ScalarProperty Name="NB_CATALOGO_LISTA" ColumnName="NB_CATALOGO_LISTA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_ROL" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_ROL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_ROL_Result">
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="CL_ROL" ColumnName="CL_ROL" />
+          <ScalarProperty Name="NB_ROL" ColumnName="NB_ROL" />
+          <ScalarProperty Name="XML_AUTORIZACION" ColumnName="XML_AUTORIZACION" />
+          <ScalarProperty Name="FG_ACTIVO" ColumnName="FG_ACTIVO" />
+          <ScalarProperty Name="FE_INACTIVO" ColumnName="FE_INACTIVO" />
+          <ScalarProperty Name="DS_FILTRO" ColumnName="DS_FILTRO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_ROL_FUNCION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_ROL_FUNCION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_ROL_FUNCION_Result">
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="ID_FUNCION" ColumnName="ID_FUNCION" />
+          <ScalarProperty Name="NB_ROL" ColumnName="NB_ROL" />
+          <ScalarProperty Name="CL_ROL" ColumnName="CL_ROL" />
+          <ScalarProperty Name="XML_AUTORIZACION" ColumnName="XML_AUTORIZACION" />
+          <ScalarProperty Name="CL_FUNCION" ColumnName="CL_FUNCION" />
+          <ScalarProperty Name="CL_TIPO_FUNCION" ColumnName="CL_TIPO_FUNCION" />
+          <ScalarProperty Name="NB_FUNCION" ColumnName="NB_FUNCION" />
+          <ScalarProperty Name="NB_URL" ColumnName="NB_URL" />
+          <ScalarProperty Name="XML_CONFIGURACION" ColumnName="XML_CONFIGURACION" />
+          <ScalarProperty Name="ID_FUNCION_PADRE" ColumnName="ID_FUNCION_PADRE" />
+          <ScalarProperty Name="DS_FILTRO" ColumnName="DS_FILTRO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_USUARIO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_USUARIO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_USUARIO_Result">
+          <ScalarProperty Name="CL_USUARIO" ColumnName="CL_USUARIO" />
+          <ScalarProperty Name="NB_USUARIO" ColumnName="NB_USUARIO" />
+          <ScalarProperty Name="NB_CORREO_ELECTRONICO" ColumnName="NB_CORREO_ELECTRONICO" />
+          <ScalarProperty Name="NB_PASSWORD" ColumnName="NB_PASSWORD" />
+          <ScalarProperty Name="FG_CAMBIAR_PASSWORD" ColumnName="FG_CAMBIAR_PASSWORD" />
+          <ScalarProperty Name="XML_PERSONALIZACION" ColumnName="XML_PERSONALIZACION" />
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="FG_ACTIVO" ColumnName="FG_ACTIVO" />
+          <ScalarProperty Name="FE_INACTIVO" ColumnName="FE_INACTIVO" />
+          <ScalarProperty Name="DS_FILTRO" ColumnName="DS_FILTRO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_S_CATALOGO_TIPO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_S_CATALOGO_TIPO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_S_CATALOGO_TIPO_Result">
+          <ScalarProperty Name="ID_CATALOGO_TIPO" ColumnName="ID_CATALOGO_TIPO" />
+          <ScalarProperty Name="NB_CATALOGO_TIPO" ColumnName="NB_CATALOGO_TIPO" />
+          <ScalarProperty Name="DS_CATALOGO_TIPO" ColumnName="DS_CATALOGO_TIPO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_S_CONFIGURACION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_S_CONFIGURACION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_S_CONFIGURACION_Result">
+          <ScalarProperty Name="XML_CONFIGURACION" ColumnName="XML_CONFIGURACION" />
+          <ScalarProperty Name="FI_LOGOTIPO" ColumnName="FI_LOGOTIPO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_S_FUNCION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_S_FUNCION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_S_FUNCION_Result">
+          <ScalarProperty Name="ID_FUNCION" ColumnName="ID_FUNCION" />
+          <ScalarProperty Name="CL_FUNCION" ColumnName="CL_FUNCION" />
+          <ScalarProperty Name="CL_TIPO_FUNCION" ColumnName="CL_TIPO_FUNCION" />
+          <ScalarProperty Name="NB_FUNCION" ColumnName="NB_FUNCION" />
+          <ScalarProperty Name="ID_FUNCION_PADRE" ColumnName="ID_FUNCION_PADRE" />
+          <ScalarProperty Name="NB_URL" ColumnName="NB_URL" />
+          <ScalarProperty Name="XML_CONFIGURACION" ColumnName="XML_CONFIGURACION" />
+          <ScalarProperty Name="DS_FILTRO" ColumnName="DS_FILTRO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_USUARIO_AUTENTICACION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_USUARIO_AUTENTICACION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_USUARIO_AUTENTICACION_Result">
+          <ScalarProperty Name="CL_AUTENTICACION" ColumnName="CL_AUTENTICACION" />
+          <ScalarProperty Name="XML_AUTORIZACION" ColumnName="XML_AUTORIZACION" />
+          <ScalarProperty Name="CL_USUARIO" ColumnName="CL_USUARIO" />
+          <ScalarProperty Name="NB_USUARIO" ColumnName="NB_USUARIO" />
+          <ScalarProperty Name="NB_PASSWORD" ColumnName="NB_PASSWORD" />
+          <ScalarProperty Name="NB_CORREO_ELECTRONICO" ColumnName="NB_CORREO_ELECTRONICO" />
+          <ScalarProperty Name="FG_ACTIVO" ColumnName="FG_ACTIVO" />
+          <ScalarProperty Name="NB_ROL" ColumnName="NB_ROL" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="XML_DATA" ColumnName="XML_DATA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_ROLES" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_ROLES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_ROLES_Result">
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="CL_ROL" ColumnName="CL_ROL" />
+          <ScalarProperty Name="NB_ROL" ColumnName="NB_ROL" />
+          <ScalarProperty Name="FG_ACTIVO" ColumnName="FG_ACTIVO" />
+          <ScalarProperty Name="FE_MODIFICACION" ColumnName="FE_MODIFICACION" />
+          <ScalarProperty Name="CL_USUARIO_MODIFICA" ColumnName="CL_USUARIO_MODIFICA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_ROL" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_ROL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_ROL_Result">
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="CL_ROL" ColumnName="CL_ROL" />
+          <ScalarProperty Name="NB_ROL" ColumnName="NB_ROL" />
+          <ScalarProperty Name="FG_ACTIVO" ColumnName="FG_ACTIVO" />
+          <ScalarProperty Name="XML_AUTORIZACION" ColumnName="XML_AUTORIZACION" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_ROLES" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_ROLES" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_CLIENTE" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_CLIENTE" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_EMPRESA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_EMPRESA" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_LICENCIA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_LICENCIA" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_MODULO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_MODULO" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_SISTEMA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_SISTEMA" />
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_C_VERSION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_C_VERSION" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_EMPRESA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_EMPRESA" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_LICENCIA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_LICENCIA" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_MODULO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_MODULO" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_SISTEMA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_SISTEMA" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_VERSION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_VERSION" />
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_EMPRESA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_EMPRESA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_EMPRESA_Result">
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+          <ScalarProperty Name="CL_EMPRESA" ColumnName="CL_EMPRESA" />
+          <ScalarProperty Name="NB_EMPRESA" ColumnName="NB_EMPRESA" />
+          <ScalarProperty Name="DS_EMPRESA" ColumnName="DS_EMPRESA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_LICENCIA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_LICENCIA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_LICENCIA_Result">
+          <ScalarProperty Name="ID_LICENCIA" ColumnName="ID_LICENCIA" />
+          <ScalarProperty Name="CL_LICENCIA" ColumnName="CL_LICENCIA" />
+          <ScalarProperty Name="NB_LICENCIA" ColumnName="NB_LICENCIA" />
+          <ScalarProperty Name="FG_PERIODO" ColumnName="FG_PERIODO" />
+          <ScalarProperty Name="FG_VOLUMEN" ColumnName="FG_VOLUMEN" />
+          <ScalarProperty Name="DS_LICENCIA" ColumnName="DS_LICENCIA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_MODULO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_MODULO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_MODULO_Result">
+          <ScalarProperty Name="ID_MODULO" ColumnName="ID_MODULO" />
+          <ScalarProperty Name="CL_MODULO" ColumnName="CL_MODULO" />
+          <ScalarProperty Name="NB_MODULO" ColumnName="NB_MODULO" />
+          <ScalarProperty Name="DS_MODULO" ColumnName="DS_MODULO" />
+          <ScalarProperty Name="ID_SISTEMA" ColumnName="ID_SISTEMA" />
+          <ScalarProperty Name="NB_SISTEMA" ColumnName="NB_SISTEMA" />
+          <ScalarProperty Name="CL_SISTEMA" ColumnName="CL_SISTEMA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_SISTEMA" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_SISTEMA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_SISTEMA_Result">
+          <ScalarProperty Name="ID_SISTEMA" ColumnName="ID_SISTEMA" />
+          <ScalarProperty Name="CL_SISTEMA" ColumnName="CL_SISTEMA" />
+          <ScalarProperty Name="NB_SISTEMA" ColumnName="NB_SISTEMA" />
+          <ScalarProperty Name="CL_TIPO" ColumnName="CL_TIPO" />
+          <ScalarProperty Name="DS_SISTEMA" ColumnName="DS_SISTEMA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_VERSION" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_VERSION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_VERSION_Result">
+          <ScalarProperty Name="ID_VERSION" ColumnName="ID_VERSION" />
+          <ScalarProperty Name="NO_RELEASE" ColumnName="NO_RELEASE" />
+          <ScalarProperty Name="DS_VERSION" ColumnName="DS_VERSION" />
+          <ScalarProperty Name="ID_MODULO" ColumnName="ID_MODULO" />
+          <ScalarProperty Name="NB_MODULO" ColumnName="NB_MODULO" />
+          <ScalarProperty Name="CL_MODULO" ColumnName="CL_MODULO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_K_GESTION_PERIODO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_K_GESTION_PERIODO" />
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_K_GESTION_PERIODOS" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_K_GESTION_PERIODOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_K_GESTION_PERIODOS_Result">
+          <ScalarProperty Name="ID_GESTION_PERIODO" ColumnName="ID_GESTION_PERIODO" />
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="NB_CLIENTE" ColumnName="NB_CLIENTE" />
+          <ScalarProperty Name="ID_SISTEMA" ColumnName="ID_SISTEMA" />
+          <ScalarProperty Name="NB_SISTEMA" ColumnName="NB_SISTEMA" />
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+          <ScalarProperty Name="NB_EMPRESA" ColumnName="NB_EMPRESA" />
+          <ScalarProperty Name="ID_MODULO" ColumnName="ID_MODULO" />
+          <ScalarProperty Name="NB_MODULO" ColumnName="NB_MODULO" />
+          <ScalarProperty Name="ID_VERSION" ColumnName="ID_VERSION" />
+          <ScalarProperty Name="NO_RELEASE" ColumnName="NO_RELEASE" />
+          <ScalarProperty Name="ID_LICENCIA" ColumnName="ID_LICENCIA" />
+          <ScalarProperty Name="NB_LICENCIA" ColumnName="NB_LICENCIA" />
+          <ScalarProperty Name="FE_INICIO" ColumnName="FE_INICIO" />
+          <ScalarProperty Name="FE_FIN" ColumnName="FE_FIN" />
+          <ScalarProperty Name="NO_VOLUMEN" ColumnName="NO_VOLUMEN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_ELIMINA_K_GESTION_PERIODO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_ELIMINA_K_GESTION_PERIODO" />
+    <FunctionImportMapping FunctionImportName="SPE_INSERTA_ACTUALIZA_C_CLIENTE" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_INSERTA_ACTUALIZA_C_CLIENTE" />
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_LICENCIAMIENTO" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_LICENCIAMIENTO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_LICENCIAMIENTO_Result">
+          <ScalarProperty Name="ID_GESTION_PERIODO" ColumnName="ID_GESTION_PERIODO" />
+          <ScalarProperty Name="CL_CLIENTE" ColumnName="CL_CLIENTE" />
+          <ScalarProperty Name="CL_PASSWORD" ColumnName="CL_PASSWORD" />
+          <ScalarProperty Name="CL_SISTEMA" ColumnName="CL_SISTEMA" />
+          <ScalarProperty Name="CL_EMPRESA" ColumnName="CL_EMPRESA" />
+          <ScalarProperty Name="CL_MODULO" ColumnName="CL_MODULO" />
+          <ScalarProperty Name="NO_RELEASE" ColumnName="NO_RELEASE" />
+          <ScalarProperty Name="CL_LICENCIA" ColumnName="CL_LICENCIA" />
+          <ScalarProperty Name="FE_INICIO" ColumnName="FE_INICIO" />
+          <ScalarProperty Name="FE_FIN" ColumnName="FE_FIN" />
+          <ScalarProperty Name="NO_VOLUMEN" ColumnName="NO_VOLUMEN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_C_CLIENTES" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_C_CLIENTES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_C_CLIENTES_Result">
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="CL_CLIENTE" ColumnName="CL_CLIENTE" />
+          <ScalarProperty Name="CL_PASSWORD" ColumnName="CL_PASSWORD" />
+          <ScalarProperty Name="NB_CLIENTE" ColumnName="NB_CLIENTE" />
+          <ScalarProperty Name="NB_CONTACTO" ColumnName="NB_CONTACTO" />
+          <ScalarProperty Name="CL_EMAIL" ColumnName="CL_EMAIL" />
+          <ScalarProperty Name="XML_TELEFONOS" ColumnName="XML_TELEFONOS" />
+          <ScalarProperty Name="NB_EJECUTIVO_CUENTA" ColumnName="NB_EJECUTIVO_CUENTA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_CLIENTE_CATALOGOS" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_CLIENTE_CATALOGOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_CLIENTE_CATALOGOS_Result">
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="CL_CLIENTE" ColumnName="CL_CLIENTE" />
+          <ScalarProperty Name="CL_PASSWORD" ColumnName="CL_PASSWORD" />
+          <ScalarProperty Name="NB_CLIENTE" ColumnName="NB_CLIENTE" />
+          <ScalarProperty Name="NB_CONTACTO" ColumnName="NB_CONTACTO" />
+          <ScalarProperty Name="CL_EMAIL" ColumnName="CL_EMAIL" />
+          <ScalarProperty Name="XML_TELEFONOS" ColumnName="XML_TELEFONOS" />
+          <ScalarProperty Name="NB_EJECUTIVO_CUENTA" ColumnName="NB_EJECUTIVO_CUENTA" />
+          <ScalarProperty Name="CATALOGOS" ColumnName="CATALOGOS" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_INFORMACION_CLIENTE" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_INFORMACION_CLIENTE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_INFORMACION_CLIENTE_Result">
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="CL_CLIENTE" ColumnName="CL_CLIENTE" />
+          <ScalarProperty Name="FE_CREACION" ColumnName="FE_CREACION" />
+          <ScalarProperty Name="CL_PASSWORD" ColumnName="CL_PASSWORD" />
+          <ScalarProperty Name="CATALOGOS" ColumnName="CATALOGOS" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPE_OBTIENE_LICENCIAS" FunctionName="ACRUXLICENCIAMIENTOModel.Store.SPE_OBTIENE_LICENCIAS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACRUXLICENCIAMIENTOModel.SPE_OBTIENE_LICENCIAS_Result">
+          <ScalarProperty Name="XML_LICENCIAS" ColumnName="XML_LICENCIAS" />
+          <ScalarProperty Name="FE_CREACION" ColumnName="FE_CREACION" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

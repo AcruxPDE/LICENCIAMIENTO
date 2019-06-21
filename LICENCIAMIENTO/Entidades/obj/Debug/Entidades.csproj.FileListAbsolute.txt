@@ -18,3 +18,11 @@ C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entid
 C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\obj\Debug\Entidades.dll
 C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\obj\Debug\Entidades.pdb
 C:\Users\Levy Urbieta\Documents\Visual Studio 2015\Projects\Licenciamiento\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\TI\Documents\GitHub\LICENCIAMIENTO\LICENCIAMIENTO\Entidades\bin\Debug\Entidades.dll
+C:\Users\TI\Documents\GitHub\LICENCIAMIENTO\LICENCIAMIENTO\Entidades\bin\Debug\Entidades.pdb
+C:\Users\TI\Documents\GitHub\LICENCIAMIENTO\LICENCIAMIENTO\Entidades\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TI\Documents\GitHub\LICENCIAMIENTO\LICENCIAMIENTO\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\TI\Documents\GitHub\LICENCIAMIENTO\LICENCIAMIENTO\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\TI\Documents\GitHub\LICENCIAMIENTO\LICENCIAMIENTO\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\TI\Documents\GitHub\LICENCIAMIENTO\LICENCIAMIENTO\Entidades\obj\Debug\Entidades.dll
+C:\Users\TI\Documents\GitHub\LICENCIAMIENTO\LICENCIAMIENTO\Entidades\obj\Debug\Entidades.pdb

@@ -60,10 +60,10 @@
 
         <div class="row">
             <div class="col-md-12 col-xs-12" style="position: absolute; top: 0px; left: 0%;">
-               <%-- <center>
+                <center>
                     <img src="Assets/images/TituloBannerSigein.png" class="visible-md visible-lg visible-sm" alt="Banner" />
                     <img src="Assets/images/Logo.png" alt="Logo" class="visible-xs" />
-                </center>--%>
+                </center>
             </div>
         </div>
 

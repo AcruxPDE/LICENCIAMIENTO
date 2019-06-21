@@ -35,7 +35,7 @@ namespace WebApp.Comunes
                     break;
             }
 
-            pWindow.RadAlert(pMensaje.Replace("'", "\""), pAncho, pAlto, pTipoMensaje.ToString(), pCallBackFunction, vUrlImage);
+            pWindow.RadAlert(pMensaje.Replace("'", "\""), pAncho, pAlto, "Aviso", pCallBackFunction, vUrlImage);
         }
 
         public static void MensajeDB(RadWindowManager pWindow, string pMensaje, E_TIPO_RESPUESTA_DB pTipoMensaje, int pAncho = 400, int pAlto = 150, string pCallBackFunction = "closeWindow")
@@ -61,7 +61,7 @@ namespace WebApp.Comunes
                     break;
             }
 
-            pWindow.RadConfirm(pMensaje.Replace("'", "\""), pCallBackFunction, pAncho, pAlto, null, pTipoMensaje.ToString(), vUrlImage);
+            pWindow.RadConfirm(pMensaje.Replace("'", "\""), pCallBackFunction, pAncho, pAlto, null, "Aviso", vUrlImage);
         }
     }
 }

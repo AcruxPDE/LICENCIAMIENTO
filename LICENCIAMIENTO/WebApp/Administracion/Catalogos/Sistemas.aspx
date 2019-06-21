@@ -11,7 +11,7 @@
                 if (selectedItem != undefined)
                     OpenWindow(selectedItem.getDataKeyValue("ID_SISTEMA"));
                 else
-                    radalert("Selecciona un sistema.", 400, 150);
+                    radalert("Selecciona un sistema.", 400, 150, "Aviso");
             }
 
             function OpenWindow(pIdSistema) {
@@ -42,7 +42,7 @@
                     confirmAction(sender, args, "¿Deseas eliminar el sistema " + vNombre + "?, este proceso no podrá revertirse");
                 }
                 else {
-                    radalert("Selecciona un sistema.", 400, 150);
+                    radalert("Selecciona un sistema.", 400, 150, "Aviso");
                     args.set_cancel(true);
                 }
             }

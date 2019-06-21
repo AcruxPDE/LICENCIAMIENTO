@@ -11,7 +11,7 @@
                 if (selectedItem != undefined)
                     OpenWindow(selectedItem.getDataKeyValue("ID_EMPRESA"));
                 else
-                    radalert("Selecciona una empresa.", 400, 150);
+                    radalert("Selecciona una empresa.", 400, 150, "Aviso");
             }
 
             function OpenWindow(pIdEmpresa) {
@@ -42,7 +42,7 @@
                     confirmAction(sender, args, "¿Deseas eliminar la empresa " + vNombre + "?, este proceso no podrá revertirse");
                 }
                 else {
-                    radalert("Selecciona una empresa.", 400, 150);
+                    radalert("Selecciona una empresa.", 400, 150, "Aviso");
                     args.set_cancel(true);
                 }
             }

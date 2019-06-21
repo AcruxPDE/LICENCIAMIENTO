@@ -12,7 +12,7 @@
                 if (selectedItem != undefined)
                     OpenWindow(selectedItem.getDataKeyValue("ID_CLIENTE"));
                 else
-                    radalert("Selecciona un cliente.", 400, 150);
+                    radalert("Selecciona un cliente.", 400, 150, "Aviso");
             }
 
             function OpenWindow(pIdCliente) {
@@ -45,7 +45,7 @@
                     confirmAction(sender, args, "¿Deseas eliminar el cliente " + vNombre + "?, este proceso no podrá revertirse");
                 }
                 else {
-                    radalert("Selecciona un cliente.", 400, 150);
+                    radalert("Selecciona un cliente.", 400, 150, "Aviso");
                     args.set_cancel(true);
                 }
             }

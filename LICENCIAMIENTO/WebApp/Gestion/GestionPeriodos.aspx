@@ -18,7 +18,7 @@
                 if (selectedItem != undefined)
                     OpenWindow(selectedItem.getDataKeyValue("ID_GESTION_PERIODO"));
                 else
-                    radalert("Selecciona un periodo.", 400, 150);
+                    radalert("Selecciona un periodo.", 400, 150, "Aviso");
             }
 
             function OpenWindow(pIdPeriodo) {
@@ -51,7 +51,7 @@
                     confirmAction(sender, args, "¿Deseas eliminar el periodo, este proceso no podrá revertirse");
                 }
                 else {
-                    radalert("Selecciona un periodo.", 400, 150);
+                    radalert("Selecciona un periodo.", 400, 150, "Aviso");
                     args.set_cancel(true);
                 }
             }

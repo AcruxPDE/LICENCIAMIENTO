@@ -11,7 +11,7 @@
                 if (selectedItem != undefined)
                     OpenWindow(selectedItem.getDataKeyValue("ID_ROL"));
                 else
-                    radalert("Selecciona un rol.", 400, 150);
+                    radalert("Selecciona un rol.", 400, 150, "Aviso");
             }
 
             function OpenWindow(pIdRol) {
@@ -42,7 +42,7 @@
                     confirmAction(sender, args, "¿Deseas eliminar el rol " + vNombre + "?, este proceso no podrá revertirse");
                 }
                 else {
-                    radalert("Selecciona un rol.", 400, 150);
+                    radalert("Selecciona un rol.", 400, 150, "Aviso");
                     args.set_cancel(true);
                 }
             }

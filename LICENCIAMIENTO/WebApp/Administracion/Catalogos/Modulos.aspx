@@ -11,7 +11,7 @@
                 if (selectedItem != undefined)
                     OpenWindow(selectedItem.getDataKeyValue("ID_MODULO"));
                 else
-                    radalert("Selecciona un módulo.", 400, 150);
+                    radalert("Selecciona un módulo.", 400, 150, "Aviso");
             }
 
             function OpenWindow(pIdModulo) {
@@ -39,10 +39,10 @@
                         height: 200
                     };
 
-                    confirmAction(sender, args, "¿Deseas eliminar el módulo " + vNombre + "?, este proceso no podrá revertirse");
+                    confirmAction(sender, args, "¿Deseas eliminar el módulo " + vNombre + "?, este proceso no podrá revertirse", "Aviso");
                 }
                 else {
-                    radalert("Selecciona un módulo.", 400, 150);
+                    radalert("Selecciona un módulo.", 400, 150, "Aviso");
                     args.set_cancel(true);
                 }
             }

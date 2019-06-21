@@ -29,9 +29,9 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="centered">
-                <telerik:RadLabel ForeColor="#A6A6A6"   runat="server" ID="radLabelDefault" Text="Licenciamiento" CssClass="RadLabelPlaskolite"></telerik:RadLabel>
-            </div>
+    <div class="centered">
+        <telerik:RadLabel ForeColor="#A6A6A6" runat="server" ID="radLabelDefault" Text="Licenciamiento" CssClass="RadLabelPlaskolite"></telerik:RadLabel>
+    </div>
     <telerik:RadWindowManager ID="RadWindowManager1" EnableShadow="true" runat="server" OnClientClose="returnDataToParentPopup">        
     </telerik:RadWindowManager>
 </asp:Content>
